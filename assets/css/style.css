@@ -28,11 +28,14 @@
   
 ***************************************/
 
-@import 'foundation.min.css';
-@import 'animations.css';
-@import 'reset.css';
+@import "foundation.min.css";
+@import "animations.css";
+@import "reset.css";
 
 /*--------------------- Menu --------------------*/
+.hide {
+  display: none !important;
+}
 .site-name {
   font-size: 3em;
 }
@@ -45,7 +48,7 @@
 .menu-button i {
   cursor: pointer;
 }
-.back[class^='fa-'] {
+.back[class^="fa-"] {
   border: 2px solid;
   border-radius: 50% 50% 50% 50%;
   margin: 0 1px;
@@ -264,7 +267,7 @@
 .metro-panel .space:hover i.icon-4x {
   transition: all 0.2s ease-in;
 }
-.metro-panel .space:hover i.icon-4x[class^='icon-'],
+.metro-panel .space:hover i.icon-4x[class^="icon-"],
 .metro-panel .space:hover i.icon-4x {
   font-size: 5em;
   line-height: 67px;
@@ -337,8 +340,8 @@
   display: block;
   transition: all 2s ease 0.5s;
 }
-[class^='icon-'],
-[class*=' icon-'] {
+[class^="icon-"],
+[class*=" icon-"] {
   text-shadow: 0 1px rgba(0, 0, 0, 0.2);
 }
 .pt-perspective {
@@ -485,7 +488,7 @@ a.read_more {
   left: 0;
   border-style: dotted;
   border-width: 0;
-  content: '';
+  content: "";
 }
 .sidebar-right .block-title:after {
   width: 30px;
@@ -496,7 +499,7 @@ a.read_more {
   left: 0;
   border-style: solid;
   border-width: 0;
-  content: '';
+  content: "";
 }
 .sidebar-right .block-title {
   background: #9f2cea;
@@ -542,21 +545,21 @@ a.read_more {
   list-style: none;
 }
 .sidebar-right ul li a:before {
-  content: '';
+  content: "";
   font-family: FontAwesome;
   font-size: 14px;
   left: -8px;
   position: relative;
 }
 .sidebar-right ul#recentcomments li:before {
-  content: '';
+  content: "";
   font-family: FontAwesome;
   font-size: 14px;
   left: -8px;
   position: relative;
 }
 .sidebar-right ul#recentcomments li a:before {
-  content: '';
+  content: "";
 }
 
 /*--------------------------------- Next Events ---------------------------------------*/
@@ -901,7 +904,7 @@ li.portfolio-item {
 }
 .portfolio-item figure:before {
   border-top: 190px solid #0055aa;
-  content: '';
+  content: "";
   display: none;
   opacity: 0.1;
   position: absolute;
@@ -1007,19 +1010,19 @@ figcaption {
 .contact-page .form-textarea {
   height: 200px;
 }
-div.wpcf7 .wpcf7-form input[type='text'],
-div.wpcf7 .wpcf7-form input[type='password'],
-div.wpcf7 .wpcf7-form input[type='date'],
-div.wpcf7 .wpcf7-form input[type='datetime'],
-div.wpcf7 .wpcf7-form input[type='datetime-local'],
-div.wpcf7 .wpcf7-form input[type='month'],
-div.wpcf7 .wpcf7-form input[type='week'],
-div.wpcf7 .wpcf7-form input[type='email'],
-div.wpcf7 .wpcf7-form input[type='number'],
-div.wpcf7 .wpcf7-form input[type='search'],
-div.wpcf7 .wpcf7-form input[type='tel'],
-div.wpcf7 .wpcf7-form input[type='time'],
-div.wpcf7 .wpcf7-form input[type='url'],
+div.wpcf7 .wpcf7-form input[type="text"],
+div.wpcf7 .wpcf7-form input[type="password"],
+div.wpcf7 .wpcf7-form input[type="date"],
+div.wpcf7 .wpcf7-form input[type="datetime"],
+div.wpcf7 .wpcf7-form input[type="datetime-local"],
+div.wpcf7 .wpcf7-form input[type="month"],
+div.wpcf7 .wpcf7-form input[type="week"],
+div.wpcf7 .wpcf7-form input[type="email"],
+div.wpcf7 .wpcf7-form input[type="number"],
+div.wpcf7 .wpcf7-form input[type="search"],
+div.wpcf7 .wpcf7-form input[type="tel"],
+div.wpcf7 .wpcf7-form input[type="time"],
+div.wpcf7 .wpcf7-form input[type="url"],
 div.wpcf7 .wpcf7-form textarea {
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -1032,19 +1035,19 @@ div.wpcf7 .wpcf7-form textarea {
 div.wpcf7 .wpcf7-form textarea {
   width: 100%;
 }
-div.wpcf7 .wpcf7-form input[type='text']:focus,
-div.wpcf7 .wpcf7-form input[type='password']:focus,
-div.wpcf7 .wpcf7-form input[type='date']:focus,
-div.wpcf7 .wpcf7-form input[type='datetime']:focus,
-div.wpcf7 .wpcf7-form input[type='datetime-local']:focus,
-div.wpcf7 .wpcf7-form input[type='month']:focus,
-div.wpcf7 .wpcf7-form input[type='week']:focus,
-div.wpcf7 .wpcf7-form input[type='email']:focus,
-div.wpcf7 .wpcf7-form input[type='number']:focus,
-div.wpcf7 .wpcf7-form input[type='search']:focus,
-div.wpcf7 .wpcf7-form input[type='tel']:focus,
-div.wpcf7 .wpcf7-form input[type='time']:focus,
-div.wpcf7 .wpcf7-form input[type='url']:focus,
+div.wpcf7 .wpcf7-form input[type="text"]:focus,
+div.wpcf7 .wpcf7-form input[type="password"]:focus,
+div.wpcf7 .wpcf7-form input[type="date"]:focus,
+div.wpcf7 .wpcf7-form input[type="datetime"]:focus,
+div.wpcf7 .wpcf7-form input[type="datetime-local"]:focus,
+div.wpcf7 .wpcf7-form input[type="month"]:focus,
+div.wpcf7 .wpcf7-form input[type="week"]:focus,
+div.wpcf7 .wpcf7-form input[type="email"]:focus,
+div.wpcf7 .wpcf7-form input[type="number"]:focus,
+div.wpcf7 .wpcf7-form input[type="search"]:focus,
+div.wpcf7 .wpcf7-form input[type="tel"]:focus,
+div.wpcf7 .wpcf7-form input[type="time"]:focus,
+div.wpcf7 .wpcf7-form input[type="url"]:focus,
 textarea:focus {
   background-color: rgba(255, 255, 255, 0.2);
   border-color: #ffff00;
@@ -1077,19 +1080,19 @@ textarea:focus {
 
 /****************************************   Contact Form   **************************************/
 
-div.wpcf7 input[type='text'],
-div.wpcf7 input[type='password'],
-div.wpcf7 input[type='date'],
-div.wpcf7 input[type='datetime'],
-div.wpcf7 input[type='datetime-local'],
-div.wpcf7 input[type='month'],
-div.wpcf7 input[type='week'],
-div.wpcf7 input[type='email'],
-div.wpcf7 input[type='number'],
-div.wpcf7 input[type='search'],
-div.wpcf7 input[type='tel'],
-div.wpcf7 input[type='time'],
-div.wpcf7 input[type='url'] {
+div.wpcf7 input[type="text"],
+div.wpcf7 input[type="password"],
+div.wpcf7 input[type="date"],
+div.wpcf7 input[type="datetime"],
+div.wpcf7 input[type="datetime-local"],
+div.wpcf7 input[type="month"],
+div.wpcf7 input[type="week"],
+div.wpcf7 input[type="email"],
+div.wpcf7 input[type="number"],
+div.wpcf7 input[type="search"],
+div.wpcf7 input[type="tel"],
+div.wpcf7 input[type="time"],
+div.wpcf7 input[type="url"] {
   width: 50%;
 }
 
@@ -1168,7 +1171,7 @@ header p {
 }
 
 .hexa:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   width: 0;
@@ -1180,7 +1183,7 @@ header p {
 }
 
 .hexa:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   width: 0;
@@ -1203,7 +1206,7 @@ header p {
   position: absolute;
   left: 50%;
   top: 0;
-  content: ' ';
+  content: " ";
   display: block;
   width: 2px;
   height: 100%;
@@ -1311,7 +1314,7 @@ header p {
 
 .direction-l .flag:after,
 .direction-r .flag:after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   top: -15px;
@@ -1391,7 +1394,7 @@ header p {
   }
 
   .timeline li:after {
-    content: '';
+    content: "";
     display: block;
     height: 0;
     clear: both;
