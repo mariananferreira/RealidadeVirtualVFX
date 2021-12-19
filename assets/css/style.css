@@ -373,8 +373,8 @@
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
-.page-section-current,
-.no-js .page-section {
+/* .no-js .page-section, */
+.page-section-current {
   visibility: visible;
   z-index: 1;
   overflow: auto;
@@ -1497,4 +1497,8 @@ header p {
     float: right;
     text-align: left;
   }
+}
+
+.vv-text {
+  text-align: justify;
 }
