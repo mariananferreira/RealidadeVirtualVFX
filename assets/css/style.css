@@ -1461,9 +1461,11 @@ header p {
   }
 
   .button-1 {
-    background-color: #EA4C89;
+    background-color: #b1a6aa00;
+    border: 1.5px solid white;
     border-radius: 8px;
-    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
@@ -1488,14 +1490,14 @@ header p {
   }
   
   .button-1:hover,
-  .button-1:focus {
-    background-color: #F082AC;
+  .button-1:focus,.selected {
+    background-color: #666b6d;
   }
 
 
   .centerButton{
     margin: auto;
-    width: 70%;
+    width: fit-content;
     padding: 30px;
   }
 

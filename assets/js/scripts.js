@@ -611,15 +611,23 @@ jQuery(document).ready(function ($) {
   //})();
 });
 
-function filtroVV(freguesia) {
+function filtroVV(event, freguesia) {
+  console.log(event)
   let todosDivs = document.getElementsByClassName("todos");
+  let todosBotoes = document.getElementsByClassName("buttonVV");
 
   for (let i = 0; i < todosDivs.length; i++) {
     todosDivs[i].classList.add("hide");
   }
+  for (let i = 0; i < todosBotoes.length; i++) {
+    todosBotoes[i].classList.remove("selected");
+  }
+  event.srcElement.classList.add("selected")
 
   let freguesiaDiv = document.getElementsByClassName(freguesia);
   for (let i = 0; i < freguesiaDiv.length; i++) {
     freguesiaDiv[i].classList.remove("hide");
   }
 }
+
+
