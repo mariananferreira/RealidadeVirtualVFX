@@ -921,7 +921,7 @@ figcaption {
   transition: all 0.2s ease 0.5s;
 }
 .article.portfolio-item figcaption {
-  background: none repeat scroll 0 0 #F082AC;
+  background: none repeat scroll 0 0 #567798b3;
   display: block;
   bottom: 0;
   height: auto;
@@ -1491,7 +1491,7 @@ header p {
   
   .button-1:hover,
   .button-1:focus,.selected {
-    background-color: #666b6d;
+    background-color: #567798b3;
   }
 
 
