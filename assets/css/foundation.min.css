@@ -1,13 +1,13 @@
 meta.foundation-mq-small {
-  font-family: 'only screen and (min-width: 768px)';
+  font-family: "only screen and (min-width: 768px)";
   width: 768px;
 }
 meta.foundation-mq-medium {
-  font-family: 'only screen and (min-width:1280px)';
+  font-family: "only screen and (min-width:1280px)";
   width: 1280px;
 }
 meta.foundation-mq-large {
-  font-family: 'only screen and (min-width:1440px)';
+  font-family: "only screen and (min-width:1440px)";
   width: 1440px;
 }
 *,
@@ -26,7 +26,7 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1;
@@ -103,7 +103,7 @@ select {
 }
 .row:before,
 .row:after {
-  content: ' ';
+  content: " ";
   display: table;
 }
 .row:after {
@@ -131,7 +131,7 @@ select {
 }
 .row .row:before,
 .row .row:after {
-  content: ' ';
+  content: " ";
   display: table;
 }
 .row .row:after {
@@ -145,7 +145,7 @@ select {
 }
 .row .row.collapse:before,
 .row .row.collapse:after {
-  content: ' ';
+  content: " ";
   display: table;
 }
 .row .row.collapse:after {
@@ -259,10 +259,10 @@ select {
     position: relative;
     margin-left: 83.33333%;
   }
-  [class*='column'] + [class*='column']:last-child {
+  [class*="column"] + [class*="column"]:last-child {
     float: left;
   }
-  [class*='column'] + [class*='column'].end {
+  [class*="column"] + [class*="column"].end {
     float: left;
   }
   .column.small-centered,
@@ -863,21 +863,23 @@ th.hide-for-touch {
   display: table-cell !important;
 }
 @media only screen {
-  [class*='block-grid-'] {
-    display: block;
+  [class*="block-grid-"] {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0 -0.625em;
     *zoom: 1;
   }
-  [class*='block-grid-']:before,
-  [class*='block-grid-']:after {
-    content: ' ';
+  [class*="block-grid-"]:before,
+  [class*="block-grid-"]:after {
+    content: " ";
     display: table;
   }
-  [class*='block-grid-']:after {
+  [class*="block-grid-"]:after {
     clear: both;
   }
-  [class*='block-grid-'] > li {
+  [class*="block-grid-"] > li {
     display: inline;
     height: auto;
     float: left;
@@ -1227,7 +1229,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #222;
@@ -1286,7 +1288,7 @@ small {
   line-height: inherit;
 }
 code {
-  font-family: Consolas, 'Liberation Mono', Courier, monospace;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: bold;
   color: #7f0a0c;
 }
@@ -1364,7 +1366,7 @@ blockquote cite {
   color: #555;
 }
 blockquote cite:before {
-  content: '\2014 \0020';
+  content: "\2014 \0020";
 }
 blockquote cite a,
 blockquote cite a:visited {
@@ -1436,15 +1438,15 @@ blockquote p {
     text-decoration: underline;
   }
   a[href]:after {
-    content: ' (' attr(href) ')';
+    content: " (" attr(href) ")";
   }
   abbr[title]:after {
-    content: ' (' attr(title) ')';
+    content: " (" attr(title) ")";
   }
   .ir a:after,
-  a[href^='javascript:']:after,
-  a[href^='#']:after {
-    content: '';
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
   }
   pre,
   blockquote {
@@ -2031,19 +2033,19 @@ label.postfix.radius {
   border-top-right-radius: 1000px;
   border-bottom-right-radius: 1000px;
 }
-input[type='text'],
-input[type='password'],
-input[type='date'],
-input[type='datetime'],
-input[type='datetime-local'],
-input[type='month'],
-input[type='week'],
-input[type='email'],
-input[type='number'],
-input[type='search'],
-input[type='tel'],
-input[type='time'],
-input[type='url'],
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
 textarea {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
@@ -2067,66 +2069,66 @@ textarea {
   -moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
   transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
 }
-input[type='text']:focus,
-input[type='password']:focus,
-input[type='date']:focus,
-input[type='datetime']:focus,
-input[type='datetime-local']:focus,
-input[type='month']:focus,
-input[type='week']:focus,
-input[type='email']:focus,
-input[type='number']:focus,
-input[type='search']:focus,
-input[type='tel']:focus,
-input[type='time']:focus,
-input[type='url']:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
 textarea:focus {
   -webkit-box-shadow: 0 0 5px #999;
   -moz-box-shadow: 0 0 5px #999;
   box-shadow: 0 0 5px #999;
   border-color: #999;
 }
-input[type='text']:focus,
-input[type='password']:focus,
-input[type='date']:focus,
-input[type='datetime']:focus,
-input[type='datetime-local']:focus,
-input[type='month']:focus,
-input[type='week']:focus,
-input[type='email']:focus,
-input[type='number']:focus,
-input[type='search']:focus,
-input[type='tel']:focus,
-input[type='time']:focus,
-input[type='url']:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
 textarea:focus {
   background: #fafafa;
   border-color: #999;
   outline: none;
 }
-input[type='text'][disabled],
-input[type='password'][disabled],
-input[type='date'][disabled],
-input[type='datetime'][disabled],
-input[type='datetime-local'][disabled],
-input[type='month'][disabled],
-input[type='week'][disabled],
-input[type='email'][disabled],
-input[type='number'][disabled],
-input[type='search'][disabled],
-input[type='tel'][disabled],
-input[type='time'][disabled],
-input[type='url'][disabled],
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="date"][disabled],
+input[type="datetime"][disabled],
+input[type="datetime-local"][disabled],
+input[type="month"][disabled],
+input[type="week"][disabled],
+input[type="email"][disabled],
+input[type="number"][disabled],
+input[type="search"][disabled],
+input[type="tel"][disabled],
+input[type="time"][disabled],
+input[type="url"][disabled],
 textarea[disabled] {
   background-color: #ddd;
 }
-input[type='file'],
-input[type='checkbox'],
-input[type='radio'],
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"],
 select {
   margin: 0 0 1em 0;
 }
-input[type='file'] {
+input[type="file"] {
   width: 100%;
 }
 fieldset {
@@ -2228,7 +2230,7 @@ label.error {
 }
 .button-group:before,
 .button-group:after {
-  content: ' ';
+  content: " ";
   display: table;
 }
 .button-group:after {
@@ -2339,7 +2341,7 @@ label.error {
 }
 .button-bar:before,
 .button-bar:after {
-  content: ' ';
+  content: " ";
   display: table;
 }
 .button-bar:after {
@@ -2358,7 +2360,7 @@ label.error {
 }
 .dropdown.button:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   display: block;
@@ -2424,7 +2426,7 @@ label.error {
 }
 .split.button span:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 0;
   height: 0;
   display: block;
@@ -2543,98 +2545,98 @@ label.error {
   width: 100%;
   height: 100%;
 }
-[data-section=''],
-[data-section='auto'],
+[data-section=""],
+[data-section="auto"],
 .section-container.auto,
-[data-section='vertical-tabs'],
+[data-section="vertical-tabs"],
 .section-container.vertical-tabs,
-[data-section='vertical-nav'],
+[data-section="vertical-nav"],
 .section-container.vertical-nav,
-[data-section='horizontal-nav'],
+[data-section="horizontal-nav"],
 .section-container.horizontal-nav,
-[data-section='accordion'],
+[data-section="accordion"],
 .section-container.accordion {
   width: 100%;
   position: relative;
   display: block;
   margin-bottom: 1.25em;
 }
-[data-section=''][data-section-small-style],
-[data-section='auto'][data-section-small-style],
+[data-section=""][data-section-small-style],
+[data-section="auto"][data-section-small-style],
 .section-container.auto[data-section-small-style],
-[data-section='vertical-tabs'][data-section-small-style],
+[data-section="vertical-tabs"][data-section-small-style],
 .section-container.vertical-tabs[data-section-small-style],
-[data-section='vertical-nav'][data-section-small-style],
+[data-section="vertical-nav"][data-section-small-style],
 .section-container.vertical-nav[data-section-small-style],
-[data-section='horizontal-nav'][data-section-small-style],
+[data-section="horizontal-nav"][data-section-small-style],
 .section-container.horizontal-nav[data-section-small-style],
-[data-section='accordion'][data-section-small-style],
+[data-section="accordion"][data-section-small-style],
 .section-container.accordion[data-section-small-style] {
   width: 100% !important;
 }
-[data-section=''][data-section-small-style] > [data-section-region],
-[data-section=''][data-section-small-style] > section,
-[data-section=''][data-section-small-style] > .section,
-[data-section='auto'][data-section-small-style] > [data-section-region],
-[data-section='auto'][data-section-small-style] > section,
-[data-section='auto'][data-section-small-style] > .section,
+[data-section=""][data-section-small-style] > [data-section-region],
+[data-section=""][data-section-small-style] > section,
+[data-section=""][data-section-small-style] > .section,
+[data-section="auto"][data-section-small-style] > [data-section-region],
+[data-section="auto"][data-section-small-style] > section,
+[data-section="auto"][data-section-small-style] > .section,
 .section-container.auto[data-section-small-style] > [data-section-region],
 .section-container.auto[data-section-small-style] > section,
 .section-container.auto[data-section-small-style] > .section,
-[data-section='vertical-tabs'][data-section-small-style]
+[data-section="vertical-tabs"][data-section-small-style]
   > [data-section-region],
-[data-section='vertical-tabs'][data-section-small-style] > section,
-[data-section='vertical-tabs'][data-section-small-style] > .section,
+[data-section="vertical-tabs"][data-section-small-style] > section,
+[data-section="vertical-tabs"][data-section-small-style] > .section,
 .section-container.vertical-tabs[data-section-small-style]
   > [data-section-region],
 .section-container.vertical-tabs[data-section-small-style] > section,
 .section-container.vertical-tabs[data-section-small-style] > .section,
-[data-section='vertical-nav'][data-section-small-style] > [data-section-region],
-[data-section='vertical-nav'][data-section-small-style] > section,
-[data-section='vertical-nav'][data-section-small-style] > .section,
+[data-section="vertical-nav"][data-section-small-style] > [data-section-region],
+[data-section="vertical-nav"][data-section-small-style] > section,
+[data-section="vertical-nav"][data-section-small-style] > .section,
 .section-container.vertical-nav[data-section-small-style]
   > [data-section-region],
 .section-container.vertical-nav[data-section-small-style] > section,
 .section-container.vertical-nav[data-section-small-style] > .section,
-[data-section='horizontal-nav'][data-section-small-style]
+[data-section="horizontal-nav"][data-section-small-style]
   > [data-section-region],
-[data-section='horizontal-nav'][data-section-small-style] > section,
-[data-section='horizontal-nav'][data-section-small-style] > .section,
+[data-section="horizontal-nav"][data-section-small-style] > section,
+[data-section="horizontal-nav"][data-section-small-style] > .section,
 .section-container.horizontal-nav[data-section-small-style]
   > [data-section-region],
 .section-container.horizontal-nav[data-section-small-style] > section,
 .section-container.horizontal-nav[data-section-small-style] > .section,
-[data-section='accordion'][data-section-small-style] > [data-section-region],
-[data-section='accordion'][data-section-small-style] > section,
-[data-section='accordion'][data-section-small-style] > .section,
+[data-section="accordion"][data-section-small-style] > [data-section-region],
+[data-section="accordion"][data-section-small-style] > section,
+[data-section="accordion"][data-section-small-style] > .section,
 .section-container.accordion[data-section-small-style] > [data-section-region],
 .section-container.accordion[data-section-small-style] > section,
 .section-container.accordion[data-section-small-style] > .section {
   padding: 0 !important;
   margin: 0 !important;
 }
-[data-section=''][data-section-small-style]
+[data-section=""][data-section-small-style]
   > [data-section-region]
   > [data-section-title],
-[data-section=''][data-section-small-style] > [data-section-region] > .title,
-[data-section=''][data-section-small-style] > section > [data-section-title],
-[data-section=''][data-section-small-style] > section > .title,
-[data-section=''][data-section-small-style] > .section > [data-section-title],
-[data-section=''][data-section-small-style] > .section > .title,
-[data-section='auto'][data-section-small-style]
+[data-section=""][data-section-small-style] > [data-section-region] > .title,
+[data-section=""][data-section-small-style] > section > [data-section-title],
+[data-section=""][data-section-small-style] > section > .title,
+[data-section=""][data-section-small-style] > .section > [data-section-title],
+[data-section=""][data-section-small-style] > .section > .title,
+[data-section="auto"][data-section-small-style]
   > [data-section-region]
   > [data-section-title],
-[data-section='auto'][data-section-small-style]
+[data-section="auto"][data-section-small-style]
   > [data-section-region]
   > .title,
-[data-section='auto'][data-section-small-style]
+[data-section="auto"][data-section-small-style]
   > section
   > [data-section-title],
-[data-section='auto'][data-section-small-style] > section > .title,
-[data-section='auto'][data-section-small-style]
+[data-section="auto"][data-section-small-style] > section > .title,
+[data-section="auto"][data-section-small-style]
   > .section
   > [data-section-title],
-[data-section='auto'][data-section-small-style] > .section > .title,
+[data-section="auto"][data-section-small-style] > .section > .title,
 .section-container.auto[data-section-small-style]
   > [data-section-region]
   > [data-section-title],
@@ -2649,20 +2651,20 @@ label.error {
   > .section
   > [data-section-title],
 .section-container.auto[data-section-small-style] > .section > .title,
-[data-section='vertical-tabs'][data-section-small-style]
+[data-section="vertical-tabs"][data-section-small-style]
   > [data-section-region]
   > [data-section-title],
-[data-section='vertical-tabs'][data-section-small-style]
+[data-section="vertical-tabs"][data-section-small-style]
   > [data-section-region]
   > .title,
-[data-section='vertical-tabs'][data-section-small-style]
+[data-section="vertical-tabs"][data-section-small-style]
   > section
   > [data-section-title],
-[data-section='vertical-tabs'][data-section-small-style] > section > .title,
-[data-section='vertical-tabs'][data-section-small-style]
+[data-section="vertical-tabs"][data-section-small-style] > section > .title,
+[data-section="vertical-tabs"][data-section-small-style]
   > .section
   > [data-section-title],
-[data-section='vertical-tabs'][data-section-small-style] > .section > .title,
+[data-section="vertical-tabs"][data-section-small-style] > .section > .title,
 .section-container.vertical-tabs[data-section-small-style]
   > [data-section-region]
   > [data-section-title],
@@ -2677,20 +2679,20 @@ label.error {
   > .section
   > [data-section-title],
 .section-container.vertical-tabs[data-section-small-style] > .section > .title,
-[data-section='vertical-nav'][data-section-small-style]
+[data-section="vertical-nav"][data-section-small-style]
   > [data-section-region]
   > [data-section-title],
-[data-section='vertical-nav'][data-section-small-style]
+[data-section="vertical-nav"][data-section-small-style]
   > [data-section-region]
   > .title,
-[data-section='vertical-nav'][data-section-small-style]
+[data-section="vertical-nav"][data-section-small-style]
   > section
   > [data-section-title],
-[data-section='vertical-nav'][data-section-small-style] > section > .title,
-[data-section='vertical-nav'][data-section-small-style]
+[data-section="vertical-nav"][data-section-small-style] > section > .title,
+[data-section="vertical-nav"][data-section-small-style]
   > .section
   > [data-section-title],
-[data-section='vertical-nav'][data-section-small-style] > .section > .title,
+[data-section="vertical-nav"][data-section-small-style] > .section > .title,
 .section-container.vertical-nav[data-section-small-style]
   > [data-section-region]
   > [data-section-title],
@@ -2705,20 +2707,20 @@ label.error {
   > .section
   > [data-section-title],
 .section-container.vertical-nav[data-section-small-style] > .section > .title,
-[data-section='horizontal-nav'][data-section-small-style]
+[data-section="horizontal-nav"][data-section-small-style]
   > [data-section-region]
   > [data-section-title],
-[data-section='horizontal-nav'][data-section-small-style]
+[data-section="horizontal-nav"][data-section-small-style]
   > [data-section-region]
   > .title,
-[data-section='horizontal-nav'][data-section-small-style]
+[data-section="horizontal-nav"][data-section-small-style]
   > section
   > [data-section-title],
-[data-section='horizontal-nav'][data-section-small-style] > section > .title,
-[data-section='horizontal-nav'][data-section-small-style]
+[data-section="horizontal-nav"][data-section-small-style] > section > .title,
+[data-section="horizontal-nav"][data-section-small-style]
   > .section
   > [data-section-title],
-[data-section='horizontal-nav'][data-section-small-style] > .section > .title,
+[data-section="horizontal-nav"][data-section-small-style] > .section > .title,
 .section-container.horizontal-nav[data-section-small-style]
   > [data-section-region]
   > [data-section-title],
@@ -2733,20 +2735,20 @@ label.error {
   > .section
   > [data-section-title],
 .section-container.horizontal-nav[data-section-small-style] > .section > .title,
-[data-section='accordion'][data-section-small-style]
+[data-section="accordion"][data-section-small-style]
   > [data-section-region]
   > [data-section-title],
-[data-section='accordion'][data-section-small-style]
+[data-section="accordion"][data-section-small-style]
   > [data-section-region]
   > .title,
-[data-section='accordion'][data-section-small-style]
+[data-section="accordion"][data-section-small-style]
   > section
   > [data-section-title],
-[data-section='accordion'][data-section-small-style] > section > .title,
-[data-section='accordion'][data-section-small-style]
+[data-section="accordion"][data-section-small-style] > section > .title,
+[data-section="accordion"][data-section-small-style]
   > .section
   > [data-section-title],
-[data-section='accordion'][data-section-small-style] > .section > .title,
+[data-section="accordion"][data-section-small-style] > .section > .title,
 .section-container.accordion[data-section-small-style]
   > [data-section-region]
   > [data-section-title],
@@ -2763,89 +2765,89 @@ label.error {
 .section-container.accordion[data-section-small-style] > .section > .title {
   width: 100% !important;
 }
-[data-section=''] > section,
-[data-section=''] > .section,
-[data-section=''] > [data-section-region],
-[data-section='auto'] > section,
-[data-section='auto'] > .section,
-[data-section='auto'] > [data-section-region],
+[data-section=""] > section,
+[data-section=""] > .section,
+[data-section=""] > [data-section-region],
+[data-section="auto"] > section,
+[data-section="auto"] > .section,
+[data-section="auto"] > [data-section-region],
 .section-container.auto > section,
 .section-container.auto > .section,
 .section-container.auto > [data-section-region],
-[data-section='vertical-tabs'] > section,
-[data-section='vertical-tabs'] > .section,
-[data-section='vertical-tabs'] > [data-section-region],
+[data-section="vertical-tabs"] > section,
+[data-section="vertical-tabs"] > .section,
+[data-section="vertical-tabs"] > [data-section-region],
 .section-container.vertical-tabs > section,
 .section-container.vertical-tabs > .section,
 .section-container.vertical-tabs > [data-section-region],
-[data-section='vertical-nav'] > section,
-[data-section='vertical-nav'] > .section,
-[data-section='vertical-nav'] > [data-section-region],
+[data-section="vertical-nav"] > section,
+[data-section="vertical-nav"] > .section,
+[data-section="vertical-nav"] > [data-section-region],
 .section-container.vertical-nav > section,
 .section-container.vertical-nav > .section,
 .section-container.vertical-nav > [data-section-region],
-[data-section='horizontal-nav'] > section,
-[data-section='horizontal-nav'] > .section,
-[data-section='horizontal-nav'] > [data-section-region],
+[data-section="horizontal-nav"] > section,
+[data-section="horizontal-nav"] > .section,
+[data-section="horizontal-nav"] > [data-section-region],
 .section-container.horizontal-nav > section,
 .section-container.horizontal-nav > .section,
 .section-container.horizontal-nav > [data-section-region],
-[data-section='accordion'] > section,
-[data-section='accordion'] > .section,
-[data-section='accordion'] > [data-section-region],
+[data-section="accordion"] > section,
+[data-section="accordion"] > .section,
+[data-section="accordion"] > [data-section-region],
 .section-container.accordion > section,
 .section-container.accordion > .section,
 .section-container.accordion > [data-section-region] {
   margin: 0;
 }
-[data-section=''] > section > [data-section-title],
-[data-section=''] > section > .title,
-[data-section=''] > .section > [data-section-title],
-[data-section=''] > .section > .title,
-[data-section=''] > [data-section-region] > [data-section-title],
-[data-section=''] > [data-section-region] > .title,
-[data-section='auto'] > section > [data-section-title],
-[data-section='auto'] > section > .title,
-[data-section='auto'] > .section > [data-section-title],
-[data-section='auto'] > .section > .title,
-[data-section='auto'] > [data-section-region] > [data-section-title],
-[data-section='auto'] > [data-section-region] > .title,
+[data-section=""] > section > [data-section-title],
+[data-section=""] > section > .title,
+[data-section=""] > .section > [data-section-title],
+[data-section=""] > .section > .title,
+[data-section=""] > [data-section-region] > [data-section-title],
+[data-section=""] > [data-section-region] > .title,
+[data-section="auto"] > section > [data-section-title],
+[data-section="auto"] > section > .title,
+[data-section="auto"] > .section > [data-section-title],
+[data-section="auto"] > .section > .title,
+[data-section="auto"] > [data-section-region] > [data-section-title],
+[data-section="auto"] > [data-section-region] > .title,
 .section-container.auto > section > [data-section-title],
 .section-container.auto > section > .title,
 .section-container.auto > .section > [data-section-title],
 .section-container.auto > .section > .title,
 .section-container.auto > [data-section-region] > [data-section-title],
 .section-container.auto > [data-section-region] > .title,
-[data-section='vertical-tabs'] > section > [data-section-title],
-[data-section='vertical-tabs'] > section > .title,
-[data-section='vertical-tabs'] > .section > [data-section-title],
-[data-section='vertical-tabs'] > .section > .title,
-[data-section='vertical-tabs'] > [data-section-region] > [data-section-title],
-[data-section='vertical-tabs'] > [data-section-region] > .title,
+[data-section="vertical-tabs"] > section > [data-section-title],
+[data-section="vertical-tabs"] > section > .title,
+[data-section="vertical-tabs"] > .section > [data-section-title],
+[data-section="vertical-tabs"] > .section > .title,
+[data-section="vertical-tabs"] > [data-section-region] > [data-section-title],
+[data-section="vertical-tabs"] > [data-section-region] > .title,
 .section-container.vertical-tabs > section > [data-section-title],
 .section-container.vertical-tabs > section > .title,
 .section-container.vertical-tabs > .section > [data-section-title],
 .section-container.vertical-tabs > .section > .title,
 .section-container.vertical-tabs > [data-section-region] > [data-section-title],
 .section-container.vertical-tabs > [data-section-region] > .title,
-[data-section='vertical-nav'] > section > [data-section-title],
-[data-section='vertical-nav'] > section > .title,
-[data-section='vertical-nav'] > .section > [data-section-title],
-[data-section='vertical-nav'] > .section > .title,
-[data-section='vertical-nav'] > [data-section-region] > [data-section-title],
-[data-section='vertical-nav'] > [data-section-region] > .title,
+[data-section="vertical-nav"] > section > [data-section-title],
+[data-section="vertical-nav"] > section > .title,
+[data-section="vertical-nav"] > .section > [data-section-title],
+[data-section="vertical-nav"] > .section > .title,
+[data-section="vertical-nav"] > [data-section-region] > [data-section-title],
+[data-section="vertical-nav"] > [data-section-region] > .title,
 .section-container.vertical-nav > section > [data-section-title],
 .section-container.vertical-nav > section > .title,
 .section-container.vertical-nav > .section > [data-section-title],
 .section-container.vertical-nav > .section > .title,
 .section-container.vertical-nav > [data-section-region] > [data-section-title],
 .section-container.vertical-nav > [data-section-region] > .title,
-[data-section='horizontal-nav'] > section > [data-section-title],
-[data-section='horizontal-nav'] > section > .title,
-[data-section='horizontal-nav'] > .section > [data-section-title],
-[data-section='horizontal-nav'] > .section > .title,
-[data-section='horizontal-nav'] > [data-section-region] > [data-section-title],
-[data-section='horizontal-nav'] > [data-section-region] > .title,
+[data-section="horizontal-nav"] > section > [data-section-title],
+[data-section="horizontal-nav"] > section > .title,
+[data-section="horizontal-nav"] > .section > [data-section-title],
+[data-section="horizontal-nav"] > .section > .title,
+[data-section="horizontal-nav"] > [data-section-region] > [data-section-title],
+[data-section="horizontal-nav"] > [data-section-region] > .title,
 .section-container.horizontal-nav > section > [data-section-title],
 .section-container.horizontal-nav > section > .title,
 .section-container.horizontal-nav > .section > [data-section-title],
@@ -2854,12 +2856,12 @@ label.error {
   > [data-section-region]
   > [data-section-title],
 .section-container.horizontal-nav > [data-section-region] > .title,
-[data-section='accordion'] > section > [data-section-title],
-[data-section='accordion'] > section > .title,
-[data-section='accordion'] > .section > [data-section-title],
-[data-section='accordion'] > .section > .title,
-[data-section='accordion'] > [data-section-region] > [data-section-title],
-[data-section='accordion'] > [data-section-region] > .title,
+[data-section="accordion"] > section > [data-section-title],
+[data-section="accordion"] > section > .title,
+[data-section="accordion"] > .section > [data-section-title],
+[data-section="accordion"] > .section > .title,
+[data-section="accordion"] > [data-section-region] > [data-section-title],
+[data-section="accordion"] > [data-section-region] > .title,
 .section-container.accordion > section > [data-section-title],
 .section-container.accordion > section > .title,
 .section-container.accordion > .section > [data-section-title],
@@ -2868,30 +2870,30 @@ label.error {
 .section-container.accordion > [data-section-region] > .title {
   margin-bottom: 0;
 }
-[data-section=''] > section > [data-section-title] a,
-[data-section=''] > section > .title a,
-[data-section=''] > .section > [data-section-title] a,
-[data-section=''] > .section > .title a,
-[data-section=''] > [data-section-region] > [data-section-title] a,
-[data-section=''] > [data-section-region] > .title a,
-[data-section='auto'] > section > [data-section-title] a,
-[data-section='auto'] > section > .title a,
-[data-section='auto'] > .section > [data-section-title] a,
-[data-section='auto'] > .section > .title a,
-[data-section='auto'] > [data-section-region] > [data-section-title] a,
-[data-section='auto'] > [data-section-region] > .title a,
+[data-section=""] > section > [data-section-title] a,
+[data-section=""] > section > .title a,
+[data-section=""] > .section > [data-section-title] a,
+[data-section=""] > .section > .title a,
+[data-section=""] > [data-section-region] > [data-section-title] a,
+[data-section=""] > [data-section-region] > .title a,
+[data-section="auto"] > section > [data-section-title] a,
+[data-section="auto"] > section > .title a,
+[data-section="auto"] > .section > [data-section-title] a,
+[data-section="auto"] > .section > .title a,
+[data-section="auto"] > [data-section-region] > [data-section-title] a,
+[data-section="auto"] > [data-section-region] > .title a,
 .section-container.auto > section > [data-section-title] a,
 .section-container.auto > section > .title a,
 .section-container.auto > .section > [data-section-title] a,
 .section-container.auto > .section > .title a,
 .section-container.auto > [data-section-region] > [data-section-title] a,
 .section-container.auto > [data-section-region] > .title a,
-[data-section='vertical-tabs'] > section > [data-section-title] a,
-[data-section='vertical-tabs'] > section > .title a,
-[data-section='vertical-tabs'] > .section > [data-section-title] a,
-[data-section='vertical-tabs'] > .section > .title a,
-[data-section='vertical-tabs'] > [data-section-region] > [data-section-title] a,
-[data-section='vertical-tabs'] > [data-section-region] > .title a,
+[data-section="vertical-tabs"] > section > [data-section-title] a,
+[data-section="vertical-tabs"] > section > .title a,
+[data-section="vertical-tabs"] > .section > [data-section-title] a,
+[data-section="vertical-tabs"] > .section > .title a,
+[data-section="vertical-tabs"] > [data-section-region] > [data-section-title] a,
+[data-section="vertical-tabs"] > [data-section-region] > .title a,
 .section-container.vertical-tabs > section > [data-section-title] a,
 .section-container.vertical-tabs > section > .title a,
 .section-container.vertical-tabs > .section > [data-section-title] a,
@@ -2901,12 +2903,12 @@ label.error {
   > [data-section-title]
   a,
 .section-container.vertical-tabs > [data-section-region] > .title a,
-[data-section='vertical-nav'] > section > [data-section-title] a,
-[data-section='vertical-nav'] > section > .title a,
-[data-section='vertical-nav'] > .section > [data-section-title] a,
-[data-section='vertical-nav'] > .section > .title a,
-[data-section='vertical-nav'] > [data-section-region] > [data-section-title] a,
-[data-section='vertical-nav'] > [data-section-region] > .title a,
+[data-section="vertical-nav"] > section > [data-section-title] a,
+[data-section="vertical-nav"] > section > .title a,
+[data-section="vertical-nav"] > .section > [data-section-title] a,
+[data-section="vertical-nav"] > .section > .title a,
+[data-section="vertical-nav"] > [data-section-region] > [data-section-title] a,
+[data-section="vertical-nav"] > [data-section-region] > .title a,
 .section-container.vertical-nav > section > [data-section-title] a,
 .section-container.vertical-nav > section > .title a,
 .section-container.vertical-nav > .section > [data-section-title] a,
@@ -2916,15 +2918,15 @@ label.error {
   > [data-section-title]
   a,
 .section-container.vertical-nav > [data-section-region] > .title a,
-[data-section='horizontal-nav'] > section > [data-section-title] a,
-[data-section='horizontal-nav'] > section > .title a,
-[data-section='horizontal-nav'] > .section > [data-section-title] a,
-[data-section='horizontal-nav'] > .section > .title a,
-[data-section='horizontal-nav']
+[data-section="horizontal-nav"] > section > [data-section-title] a,
+[data-section="horizontal-nav"] > section > .title a,
+[data-section="horizontal-nav"] > .section > [data-section-title] a,
+[data-section="horizontal-nav"] > .section > .title a,
+[data-section="horizontal-nav"]
   > [data-section-region]
   > [data-section-title]
   a,
-[data-section='horizontal-nav'] > [data-section-region] > .title a,
+[data-section="horizontal-nav"] > [data-section-region] > .title a,
 .section-container.horizontal-nav > section > [data-section-title] a,
 .section-container.horizontal-nav > section > .title a,
 .section-container.horizontal-nav > .section > [data-section-title] a,
@@ -2934,12 +2936,12 @@ label.error {
   > [data-section-title]
   a,
 .section-container.horizontal-nav > [data-section-region] > .title a,
-[data-section='accordion'] > section > [data-section-title] a,
-[data-section='accordion'] > section > .title a,
-[data-section='accordion'] > .section > [data-section-title] a,
-[data-section='accordion'] > .section > .title a,
-[data-section='accordion'] > [data-section-region] > [data-section-title] a,
-[data-section='accordion'] > [data-section-region] > .title a,
+[data-section="accordion"] > section > [data-section-title] a,
+[data-section="accordion"] > section > .title a,
+[data-section="accordion"] > .section > [data-section-title] a,
+[data-section="accordion"] > .section > .title a,
+[data-section="accordion"] > [data-section-region] > [data-section-title] a,
+[data-section="accordion"] > [data-section-region] > .title a,
 .section-container.accordion > section > [data-section-title] a,
 .section-container.accordion > section > .title a,
 .section-container.accordion > .section > [data-section-title] a,
@@ -2950,30 +2952,30 @@ label.error {
   display: inline-block;
   white-space: nowrap;
 }
-[data-section=''] > section > [data-section-content],
-[data-section=''] > section > .content,
-[data-section=''] > .section > [data-section-content],
-[data-section=''] > .section > .content,
-[data-section=''] > [data-section-region] > [data-section-content],
-[data-section=''] > [data-section-region] > .content,
-[data-section='auto'] > section > [data-section-content],
-[data-section='auto'] > section > .content,
-[data-section='auto'] > .section > [data-section-content],
-[data-section='auto'] > .section > .content,
-[data-section='auto'] > [data-section-region] > [data-section-content],
-[data-section='auto'] > [data-section-region] > .content,
+[data-section=""] > section > [data-section-content],
+[data-section=""] > section > .content,
+[data-section=""] > .section > [data-section-content],
+[data-section=""] > .section > .content,
+[data-section=""] > [data-section-region] > [data-section-content],
+[data-section=""] > [data-section-region] > .content,
+[data-section="auto"] > section > [data-section-content],
+[data-section="auto"] > section > .content,
+[data-section="auto"] > .section > [data-section-content],
+[data-section="auto"] > .section > .content,
+[data-section="auto"] > [data-section-region] > [data-section-content],
+[data-section="auto"] > [data-section-region] > .content,
 .section-container.auto > section > [data-section-content],
 .section-container.auto > section > .content,
 .section-container.auto > .section > [data-section-content],
 .section-container.auto > .section > .content,
 .section-container.auto > [data-section-region] > [data-section-content],
 .section-container.auto > [data-section-region] > .content,
-[data-section='vertical-tabs'] > section > [data-section-content],
-[data-section='vertical-tabs'] > section > .content,
-[data-section='vertical-tabs'] > .section > [data-section-content],
-[data-section='vertical-tabs'] > .section > .content,
-[data-section='vertical-tabs'] > [data-section-region] > [data-section-content],
-[data-section='vertical-tabs'] > [data-section-region] > .content,
+[data-section="vertical-tabs"] > section > [data-section-content],
+[data-section="vertical-tabs"] > section > .content,
+[data-section="vertical-tabs"] > .section > [data-section-content],
+[data-section="vertical-tabs"] > .section > .content,
+[data-section="vertical-tabs"] > [data-section-region] > [data-section-content],
+[data-section="vertical-tabs"] > [data-section-region] > .content,
 .section-container.vertical-tabs > section > [data-section-content],
 .section-container.vertical-tabs > section > .content,
 .section-container.vertical-tabs > .section > [data-section-content],
@@ -2982,12 +2984,12 @@ label.error {
   > [data-section-region]
   > [data-section-content],
 .section-container.vertical-tabs > [data-section-region] > .content,
-[data-section='vertical-nav'] > section > [data-section-content],
-[data-section='vertical-nav'] > section > .content,
-[data-section='vertical-nav'] > .section > [data-section-content],
-[data-section='vertical-nav'] > .section > .content,
-[data-section='vertical-nav'] > [data-section-region] > [data-section-content],
-[data-section='vertical-nav'] > [data-section-region] > .content,
+[data-section="vertical-nav"] > section > [data-section-content],
+[data-section="vertical-nav"] > section > .content,
+[data-section="vertical-nav"] > .section > [data-section-content],
+[data-section="vertical-nav"] > .section > .content,
+[data-section="vertical-nav"] > [data-section-region] > [data-section-content],
+[data-section="vertical-nav"] > [data-section-region] > .content,
 .section-container.vertical-nav > section > [data-section-content],
 .section-container.vertical-nav > section > .content,
 .section-container.vertical-nav > .section > [data-section-content],
@@ -2996,14 +2998,14 @@ label.error {
   > [data-section-region]
   > [data-section-content],
 .section-container.vertical-nav > [data-section-region] > .content,
-[data-section='horizontal-nav'] > section > [data-section-content],
-[data-section='horizontal-nav'] > section > .content,
-[data-section='horizontal-nav'] > .section > [data-section-content],
-[data-section='horizontal-nav'] > .section > .content,
-[data-section='horizontal-nav']
+[data-section="horizontal-nav"] > section > [data-section-content],
+[data-section="horizontal-nav"] > section > .content,
+[data-section="horizontal-nav"] > .section > [data-section-content],
+[data-section="horizontal-nav"] > .section > .content,
+[data-section="horizontal-nav"]
   > [data-section-region]
   > [data-section-content],
-[data-section='horizontal-nav'] > [data-section-region] > .content,
+[data-section="horizontal-nav"] > [data-section-region] > .content,
 .section-container.horizontal-nav > section > [data-section-content],
 .section-container.horizontal-nav > section > .content,
 .section-container.horizontal-nav > .section > [data-section-content],
@@ -3012,12 +3014,12 @@ label.error {
   > [data-section-region]
   > [data-section-content],
 .section-container.horizontal-nav > [data-section-region] > .content,
-[data-section='accordion'] > section > [data-section-content],
-[data-section='accordion'] > section > .content,
-[data-section='accordion'] > .section > [data-section-content],
-[data-section='accordion'] > .section > .content,
-[data-section='accordion'] > [data-section-region] > [data-section-content],
-[data-section='accordion'] > [data-section-region] > .content,
+[data-section="accordion"] > section > [data-section-content],
+[data-section="accordion"] > section > .content,
+[data-section="accordion"] > .section > [data-section-content],
+[data-section="accordion"] > .section > .content,
+[data-section="accordion"] > [data-section-region] > [data-section-content],
+[data-section="accordion"] > [data-section-region] > .content,
 .section-container.accordion > section > [data-section-content],
 .section-container.accordion > section > .content,
 .section-container.accordion > .section > [data-section-content],
@@ -3026,32 +3028,32 @@ label.error {
 .section-container.accordion > [data-section-region] > .content {
   display: none;
 }
-[data-section=''] > section.active > [data-section-content],
-[data-section=''] > section.active > .content,
-[data-section=''] > .section.active > [data-section-content],
-[data-section=''] > .section.active > .content,
-[data-section=''] > [data-section-region].active > [data-section-content],
-[data-section=''] > [data-section-region].active > .content,
-[data-section='auto'] > section.active > [data-section-content],
-[data-section='auto'] > section.active > .content,
-[data-section='auto'] > .section.active > [data-section-content],
-[data-section='auto'] > .section.active > .content,
-[data-section='auto'] > [data-section-region].active > [data-section-content],
-[data-section='auto'] > [data-section-region].active > .content,
+[data-section=""] > section.active > [data-section-content],
+[data-section=""] > section.active > .content,
+[data-section=""] > .section.active > [data-section-content],
+[data-section=""] > .section.active > .content,
+[data-section=""] > [data-section-region].active > [data-section-content],
+[data-section=""] > [data-section-region].active > .content,
+[data-section="auto"] > section.active > [data-section-content],
+[data-section="auto"] > section.active > .content,
+[data-section="auto"] > .section.active > [data-section-content],
+[data-section="auto"] > .section.active > .content,
+[data-section="auto"] > [data-section-region].active > [data-section-content],
+[data-section="auto"] > [data-section-region].active > .content,
 .section-container.auto > section.active > [data-section-content],
 .section-container.auto > section.active > .content,
 .section-container.auto > .section.active > [data-section-content],
 .section-container.auto > .section.active > .content,
 .section-container.auto > [data-section-region].active > [data-section-content],
 .section-container.auto > [data-section-region].active > .content,
-[data-section='vertical-tabs'] > section.active > [data-section-content],
-[data-section='vertical-tabs'] > section.active > .content,
-[data-section='vertical-tabs'] > .section.active > [data-section-content],
-[data-section='vertical-tabs'] > .section.active > .content,
-[data-section='vertical-tabs']
+[data-section="vertical-tabs"] > section.active > [data-section-content],
+[data-section="vertical-tabs"] > section.active > .content,
+[data-section="vertical-tabs"] > .section.active > [data-section-content],
+[data-section="vertical-tabs"] > .section.active > .content,
+[data-section="vertical-tabs"]
   > [data-section-region].active
   > [data-section-content],
-[data-section='vertical-tabs'] > [data-section-region].active > .content,
+[data-section="vertical-tabs"] > [data-section-region].active > .content,
 .section-container.vertical-tabs > section.active > [data-section-content],
 .section-container.vertical-tabs > section.active > .content,
 .section-container.vertical-tabs > .section.active > [data-section-content],
@@ -3060,14 +3062,14 @@ label.error {
   > [data-section-region].active
   > [data-section-content],
 .section-container.vertical-tabs > [data-section-region].active > .content,
-[data-section='vertical-nav'] > section.active > [data-section-content],
-[data-section='vertical-nav'] > section.active > .content,
-[data-section='vertical-nav'] > .section.active > [data-section-content],
-[data-section='vertical-nav'] > .section.active > .content,
-[data-section='vertical-nav']
+[data-section="vertical-nav"] > section.active > [data-section-content],
+[data-section="vertical-nav"] > section.active > .content,
+[data-section="vertical-nav"] > .section.active > [data-section-content],
+[data-section="vertical-nav"] > .section.active > .content,
+[data-section="vertical-nav"]
   > [data-section-region].active
   > [data-section-content],
-[data-section='vertical-nav'] > [data-section-region].active > .content,
+[data-section="vertical-nav"] > [data-section-region].active > .content,
 .section-container.vertical-nav > section.active > [data-section-content],
 .section-container.vertical-nav > section.active > .content,
 .section-container.vertical-nav > .section.active > [data-section-content],
@@ -3076,14 +3078,14 @@ label.error {
   > [data-section-region].active
   > [data-section-content],
 .section-container.vertical-nav > [data-section-region].active > .content,
-[data-section='horizontal-nav'] > section.active > [data-section-content],
-[data-section='horizontal-nav'] > section.active > .content,
-[data-section='horizontal-nav'] > .section.active > [data-section-content],
-[data-section='horizontal-nav'] > .section.active > .content,
-[data-section='horizontal-nav']
+[data-section="horizontal-nav"] > section.active > [data-section-content],
+[data-section="horizontal-nav"] > section.active > .content,
+[data-section="horizontal-nav"] > .section.active > [data-section-content],
+[data-section="horizontal-nav"] > .section.active > .content,
+[data-section="horizontal-nav"]
   > [data-section-region].active
   > [data-section-content],
-[data-section='horizontal-nav'] > [data-section-region].active > .content,
+[data-section="horizontal-nav"] > [data-section-region].active > .content,
 .section-container.horizontal-nav > section.active > [data-section-content],
 .section-container.horizontal-nav > section.active > .content,
 .section-container.horizontal-nav > .section.active > [data-section-content],
@@ -3092,14 +3094,14 @@ label.error {
   > [data-section-region].active
   > [data-section-content],
 .section-container.horizontal-nav > [data-section-region].active > .content,
-[data-section='accordion'] > section.active > [data-section-content],
-[data-section='accordion'] > section.active > .content,
-[data-section='accordion'] > .section.active > [data-section-content],
-[data-section='accordion'] > .section.active > .content,
-[data-section='accordion']
+[data-section="accordion"] > section.active > [data-section-content],
+[data-section="accordion"] > section.active > .content,
+[data-section="accordion"] > .section.active > [data-section-content],
+[data-section="accordion"] > .section.active > .content,
+[data-section="accordion"]
   > [data-section-region].active
   > [data-section-content],
-[data-section='accordion'] > [data-section-region].active > .content,
+[data-section="accordion"] > [data-section-region].active > .content,
 .section-container.accordion > section.active > [data-section-content],
 .section-container.accordion > section.active > .content,
 .section-container.accordion > .section.active > [data-section-content],
@@ -3110,89 +3112,89 @@ label.error {
 .section-container.accordion > [data-section-region].active > .content {
   display: block;
 }
-[data-section=''] > section:not(.active),
-[data-section=''] > .section:not(.active),
-[data-section=''] > [data-section-region]:not(.active),
-[data-section='auto'] > section:not(.active),
-[data-section='auto'] > .section:not(.active),
-[data-section='auto'] > [data-section-region]:not(.active),
+[data-section=""] > section:not(.active),
+[data-section=""] > .section:not(.active),
+[data-section=""] > [data-section-region]:not(.active),
+[data-section="auto"] > section:not(.active),
+[data-section="auto"] > .section:not(.active),
+[data-section="auto"] > [data-section-region]:not(.active),
 .section-container.auto > section:not(.active),
 .section-container.auto > .section:not(.active),
 .section-container.auto > [data-section-region]:not(.active),
-[data-section='vertical-tabs'] > section:not(.active),
-[data-section='vertical-tabs'] > .section:not(.active),
-[data-section='vertical-tabs'] > [data-section-region]:not(.active),
+[data-section="vertical-tabs"] > section:not(.active),
+[data-section="vertical-tabs"] > .section:not(.active),
+[data-section="vertical-tabs"] > [data-section-region]:not(.active),
 .section-container.vertical-tabs > section:not(.active),
 .section-container.vertical-tabs > .section:not(.active),
 .section-container.vertical-tabs > [data-section-region]:not(.active),
-[data-section='vertical-nav'] > section:not(.active),
-[data-section='vertical-nav'] > .section:not(.active),
-[data-section='vertical-nav'] > [data-section-region]:not(.active),
+[data-section="vertical-nav"] > section:not(.active),
+[data-section="vertical-nav"] > .section:not(.active),
+[data-section="vertical-nav"] > [data-section-region]:not(.active),
 .section-container.vertical-nav > section:not(.active),
 .section-container.vertical-nav > .section:not(.active),
 .section-container.vertical-nav > [data-section-region]:not(.active),
-[data-section='horizontal-nav'] > section:not(.active),
-[data-section='horizontal-nav'] > .section:not(.active),
-[data-section='horizontal-nav'] > [data-section-region]:not(.active),
+[data-section="horizontal-nav"] > section:not(.active),
+[data-section="horizontal-nav"] > .section:not(.active),
+[data-section="horizontal-nav"] > [data-section-region]:not(.active),
 .section-container.horizontal-nav > section:not(.active),
 .section-container.horizontal-nav > .section:not(.active),
 .section-container.horizontal-nav > [data-section-region]:not(.active),
-[data-section='accordion'] > section:not(.active),
-[data-section='accordion'] > .section:not(.active),
-[data-section='accordion'] > [data-section-region]:not(.active),
+[data-section="accordion"] > section:not(.active),
+[data-section="accordion"] > .section:not(.active),
+[data-section="accordion"] > [data-section-region]:not(.active),
 .section-container.accordion > section:not(.active),
 .section-container.accordion > .section:not(.active),
 .section-container.accordion > [data-section-region]:not(.active) {
   padding: 0 !important;
 }
-[data-section=''] > section > [data-section-title],
-[data-section=''] > section > .title,
-[data-section=''] > .section > [data-section-title],
-[data-section=''] > .section > .title,
-[data-section=''] > [data-section-region] > [data-section-title],
-[data-section=''] > [data-section-region] > .title,
-[data-section='auto'] > section > [data-section-title],
-[data-section='auto'] > section > .title,
-[data-section='auto'] > .section > [data-section-title],
-[data-section='auto'] > .section > .title,
-[data-section='auto'] > [data-section-region] > [data-section-title],
-[data-section='auto'] > [data-section-region] > .title,
+[data-section=""] > section > [data-section-title],
+[data-section=""] > section > .title,
+[data-section=""] > .section > [data-section-title],
+[data-section=""] > .section > .title,
+[data-section=""] > [data-section-region] > [data-section-title],
+[data-section=""] > [data-section-region] > .title,
+[data-section="auto"] > section > [data-section-title],
+[data-section="auto"] > section > .title,
+[data-section="auto"] > .section > [data-section-title],
+[data-section="auto"] > .section > .title,
+[data-section="auto"] > [data-section-region] > [data-section-title],
+[data-section="auto"] > [data-section-region] > .title,
 .section-container.auto > section > [data-section-title],
 .section-container.auto > section > .title,
 .section-container.auto > .section > [data-section-title],
 .section-container.auto > .section > .title,
 .section-container.auto > [data-section-region] > [data-section-title],
 .section-container.auto > [data-section-region] > .title,
-[data-section='vertical-tabs'] > section > [data-section-title],
-[data-section='vertical-tabs'] > section > .title,
-[data-section='vertical-tabs'] > .section > [data-section-title],
-[data-section='vertical-tabs'] > .section > .title,
-[data-section='vertical-tabs'] > [data-section-region] > [data-section-title],
-[data-section='vertical-tabs'] > [data-section-region] > .title,
+[data-section="vertical-tabs"] > section > [data-section-title],
+[data-section="vertical-tabs"] > section > .title,
+[data-section="vertical-tabs"] > .section > [data-section-title],
+[data-section="vertical-tabs"] > .section > .title,
+[data-section="vertical-tabs"] > [data-section-region] > [data-section-title],
+[data-section="vertical-tabs"] > [data-section-region] > .title,
 .section-container.vertical-tabs > section > [data-section-title],
 .section-container.vertical-tabs > section > .title,
 .section-container.vertical-tabs > .section > [data-section-title],
 .section-container.vertical-tabs > .section > .title,
 .section-container.vertical-tabs > [data-section-region] > [data-section-title],
 .section-container.vertical-tabs > [data-section-region] > .title,
-[data-section='vertical-nav'] > section > [data-section-title],
-[data-section='vertical-nav'] > section > .title,
-[data-section='vertical-nav'] > .section > [data-section-title],
-[data-section='vertical-nav'] > .section > .title,
-[data-section='vertical-nav'] > [data-section-region] > [data-section-title],
-[data-section='vertical-nav'] > [data-section-region] > .title,
+[data-section="vertical-nav"] > section > [data-section-title],
+[data-section="vertical-nav"] > section > .title,
+[data-section="vertical-nav"] > .section > [data-section-title],
+[data-section="vertical-nav"] > .section > .title,
+[data-section="vertical-nav"] > [data-section-region] > [data-section-title],
+[data-section="vertical-nav"] > [data-section-region] > .title,
 .section-container.vertical-nav > section > [data-section-title],
 .section-container.vertical-nav > section > .title,
 .section-container.vertical-nav > .section > [data-section-title],
 .section-container.vertical-nav > .section > .title,
 .section-container.vertical-nav > [data-section-region] > [data-section-title],
 .section-container.vertical-nav > [data-section-region] > .title,
-[data-section='horizontal-nav'] > section > [data-section-title],
-[data-section='horizontal-nav'] > section > .title,
-[data-section='horizontal-nav'] > .section > [data-section-title],
-[data-section='horizontal-nav'] > .section > .title,
-[data-section='horizontal-nav'] > [data-section-region] > [data-section-title],
-[data-section='horizontal-nav'] > [data-section-region] > .title,
+[data-section="horizontal-nav"] > section > [data-section-title],
+[data-section="horizontal-nav"] > section > .title,
+[data-section="horizontal-nav"] > .section > [data-section-title],
+[data-section="horizontal-nav"] > .section > .title,
+[data-section="horizontal-nav"] > [data-section-region] > [data-section-title],
+[data-section="horizontal-nav"] > [data-section-region] > .title,
 .section-container.horizontal-nav > section > [data-section-title],
 .section-container.horizontal-nav > section > .title,
 .section-container.horizontal-nav > .section > [data-section-title],
@@ -3201,12 +3203,12 @@ label.error {
   > [data-section-region]
   > [data-section-title],
 .section-container.horizontal-nav > [data-section-region] > .title,
-[data-section='accordion'] > section > [data-section-title],
-[data-section='accordion'] > section > .title,
-[data-section='accordion'] > .section > [data-section-title],
-[data-section='accordion'] > .section > .title,
-[data-section='accordion'] > [data-section-region] > [data-section-title],
-[data-section='accordion'] > [data-section-region] > .title,
+[data-section="accordion"] > section > [data-section-title],
+[data-section="accordion"] > section > .title,
+[data-section="accordion"] > .section > [data-section-title],
+[data-section="accordion"] > .section > .title,
+[data-section="accordion"] > [data-section-region] > [data-section-title],
+[data-section="accordion"] > [data-section-region] > .title,
 .section-container.accordion > section > [data-section-title],
 .section-container.accordion > section > .title,
 .section-container.accordion > .section > [data-section-title],
@@ -3385,23 +3387,23 @@ label.error {
 .section-container.accordion > .section > .title {
   border-top: none;
 }
-[data-section='tabs'],
+[data-section="tabs"],
 .section-container.tabs {
   width: 100%;
   position: relative;
   display: block;
   margin-bottom: 1.25em;
 }
-[data-section='tabs']:not([data-section-resized]):not([data-section-small-style]),
+[data-section="tabs"]:not([data-section-resized]):not([data-section-small-style]),
 .section-container.tabs:not([data-section-resized]):not([data-section-small-style]) {
   visibility: hidden;
 }
-[data-section='tabs'] > section > [data-section-title],
-[data-section='tabs'] > section > .title,
-[data-section='tabs'] > .section > [data-section-title],
-[data-section='tabs'] > .section > .title,
-[data-section='tabs'] > [data-section-region] > [data-section-title],
-[data-section='tabs'] > [data-section-region] > .title,
+[data-section="tabs"] > section > [data-section-title],
+[data-section="tabs"] > section > .title,
+[data-section="tabs"] > .section > [data-section-title],
+[data-section="tabs"] > .section > .title,
+[data-section="tabs"] > [data-section-region] > [data-section-title],
+[data-section="tabs"] > [data-section-region] > .title,
 .section-container.tabs > section > [data-section-title],
 .section-container.tabs > section > .title,
 .section-container.tabs > .section > [data-section-title],
@@ -3410,12 +3412,12 @@ label.error {
 .section-container.tabs > [data-section-region] > .title {
   margin-bottom: 0;
 }
-[data-section='tabs'] > section > [data-section-title] a,
-[data-section='tabs'] > section > .title a,
-[data-section='tabs'] > .section > [data-section-title] a,
-[data-section='tabs'] > .section > .title a,
-[data-section='tabs'] > [data-section-region] > [data-section-title] a,
-[data-section='tabs'] > [data-section-region] > .title a,
+[data-section="tabs"] > section > [data-section-title] a,
+[data-section="tabs"] > section > .title a,
+[data-section="tabs"] > .section > [data-section-title] a,
+[data-section="tabs"] > .section > .title a,
+[data-section="tabs"] > [data-section-region] > [data-section-title] a,
+[data-section="tabs"] > [data-section-region] > .title a,
 .section-container.tabs > section > [data-section-title] a,
 .section-container.tabs > section > .title a,
 .section-container.tabs > .section > [data-section-title] a,
@@ -3426,12 +3428,12 @@ label.error {
   display: inline-block;
   white-space: nowrap;
 }
-[data-section='tabs'] > section > [data-section-content],
-[data-section='tabs'] > section > .content,
-[data-section='tabs'] > .section > [data-section-content],
-[data-section='tabs'] > .section > .content,
-[data-section='tabs'] > [data-section-region] > [data-section-content],
-[data-section='tabs'] > [data-section-region] > .content,
+[data-section="tabs"] > section > [data-section-content],
+[data-section="tabs"] > section > .content,
+[data-section="tabs"] > .section > [data-section-content],
+[data-section="tabs"] > .section > .content,
+[data-section="tabs"] > [data-section-region] > [data-section-content],
+[data-section="tabs"] > [data-section-region] > .content,
 .section-container.tabs > section > [data-section-content],
 .section-container.tabs > section > .content,
 .section-container.tabs > .section > [data-section-content],
@@ -3440,12 +3442,12 @@ label.error {
 .section-container.tabs > [data-section-region] > .content {
   display: none;
 }
-[data-section='tabs'] > section.active > [data-section-content],
-[data-section='tabs'] > section.active > .content,
-[data-section='tabs'] > .section.active > [data-section-content],
-[data-section='tabs'] > .section.active > .content,
-[data-section='tabs'] > [data-section-region].active > [data-section-content],
-[data-section='tabs'] > [data-section-region].active > .content,
+[data-section="tabs"] > section.active > [data-section-content],
+[data-section="tabs"] > section.active > .content,
+[data-section="tabs"] > .section.active > [data-section-content],
+[data-section="tabs"] > .section.active > .content,
+[data-section="tabs"] > [data-section-region].active > [data-section-content],
+[data-section="tabs"] > [data-section-region].active > .content,
 .section-container.tabs > section.active > [data-section-content],
 .section-container.tabs > section.active > .content,
 .section-container.tabs > .section.active > [data-section-content],
@@ -3454,20 +3456,20 @@ label.error {
 .section-container.tabs > [data-section-region].active > .content {
   display: block;
 }
-[data-section='tabs'] > section:not(.active),
-[data-section='tabs'] > .section:not(.active),
-[data-section='tabs'] > [data-section-region]:not(.active),
+[data-section="tabs"] > section:not(.active),
+[data-section="tabs"] > .section:not(.active),
+[data-section="tabs"] > [data-section-region]:not(.active),
 .section-container.tabs > section:not(.active),
 .section-container.tabs > .section:not(.active),
 .section-container.tabs > [data-section-region]:not(.active) {
   padding: 0 !important;
 }
-[data-section='tabs'] > section > [data-section-title],
-[data-section='tabs'] > section > .title,
-[data-section='tabs'] > .section > [data-section-title],
-[data-section='tabs'] > .section > .title,
-[data-section='tabs'] > [data-section-region] > [data-section-title],
-[data-section='tabs'] > [data-section-region] > .title,
+[data-section="tabs"] > section > [data-section-title],
+[data-section="tabs"] > section > .title,
+[data-section="tabs"] > .section > [data-section-title],
+[data-section="tabs"] > .section > .title,
+[data-section="tabs"] > [data-section-region] > [data-section-title],
+[data-section="tabs"] > [data-section-region] > .title,
 .section-container.tabs > section > [data-section-title],
 .section-container.tabs > section > .title,
 .section-container.tabs > .section > [data-section-title],
@@ -3534,31 +3536,31 @@ label.error {
   border-bottom: 0;
 }
 @media only screen and (min-width: 768px) {
-  [data-section=''],
-  [data-section='auto'],
+  [data-section=""],
+  [data-section="auto"],
   .section-container.auto {
     width: 100%;
     position: relative;
     display: block;
     margin-bottom: 1.25em;
   }
-  [data-section='']:not([data-section-resized]):not([data-section-small-style]),
-  [data-section='auto']:not([data-section-resized]):not([data-section-small-style]),
+  [data-section=""]:not([data-section-resized]):not([data-section-small-style]),
+  [data-section="auto"]:not([data-section-resized]):not([data-section-small-style]),
   .section-container.auto:not([data-section-resized]):not([data-section-small-style]) {
     visibility: hidden;
   }
-  [data-section=''] > section > [data-section-title],
-  [data-section=''] > section > .title,
-  [data-section=''] > .section > [data-section-title],
-  [data-section=''] > .section > .title,
-  [data-section=''] > [data-section-region] > [data-section-title],
-  [data-section=''] > [data-section-region] > .title,
-  [data-section='auto'] > section > [data-section-title],
-  [data-section='auto'] > section > .title,
-  [data-section='auto'] > .section > [data-section-title],
-  [data-section='auto'] > .section > .title,
-  [data-section='auto'] > [data-section-region] > [data-section-title],
-  [data-section='auto'] > [data-section-region] > .title,
+  [data-section=""] > section > [data-section-title],
+  [data-section=""] > section > .title,
+  [data-section=""] > .section > [data-section-title],
+  [data-section=""] > .section > .title,
+  [data-section=""] > [data-section-region] > [data-section-title],
+  [data-section=""] > [data-section-region] > .title,
+  [data-section="auto"] > section > [data-section-title],
+  [data-section="auto"] > section > .title,
+  [data-section="auto"] > .section > [data-section-title],
+  [data-section="auto"] > .section > .title,
+  [data-section="auto"] > [data-section-region] > [data-section-title],
+  [data-section="auto"] > [data-section-region] > .title,
   .section-container.auto > section > [data-section-title],
   .section-container.auto > section > .title,
   .section-container.auto > .section > [data-section-title],
@@ -3567,18 +3569,18 @@ label.error {
   .section-container.auto > [data-section-region] > .title {
     margin-bottom: 0;
   }
-  [data-section=''] > section > [data-section-title] a,
-  [data-section=''] > section > .title a,
-  [data-section=''] > .section > [data-section-title] a,
-  [data-section=''] > .section > .title a,
-  [data-section=''] > [data-section-region] > [data-section-title] a,
-  [data-section=''] > [data-section-region] > .title a,
-  [data-section='auto'] > section > [data-section-title] a,
-  [data-section='auto'] > section > .title a,
-  [data-section='auto'] > .section > [data-section-title] a,
-  [data-section='auto'] > .section > .title a,
-  [data-section='auto'] > [data-section-region] > [data-section-title] a,
-  [data-section='auto'] > [data-section-region] > .title a,
+  [data-section=""] > section > [data-section-title] a,
+  [data-section=""] > section > .title a,
+  [data-section=""] > .section > [data-section-title] a,
+  [data-section=""] > .section > .title a,
+  [data-section=""] > [data-section-region] > [data-section-title] a,
+  [data-section=""] > [data-section-region] > .title a,
+  [data-section="auto"] > section > [data-section-title] a,
+  [data-section="auto"] > section > .title a,
+  [data-section="auto"] > .section > [data-section-title] a,
+  [data-section="auto"] > .section > .title a,
+  [data-section="auto"] > [data-section-region] > [data-section-title] a,
+  [data-section="auto"] > [data-section-region] > .title a,
   .section-container.auto > section > [data-section-title] a,
   .section-container.auto > section > .title a,
   .section-container.auto > .section > [data-section-title] a,
@@ -3589,18 +3591,18 @@ label.error {
     display: inline-block;
     white-space: nowrap;
   }
-  [data-section=''] > section > [data-section-content],
-  [data-section=''] > section > .content,
-  [data-section=''] > .section > [data-section-content],
-  [data-section=''] > .section > .content,
-  [data-section=''] > [data-section-region] > [data-section-content],
-  [data-section=''] > [data-section-region] > .content,
-  [data-section='auto'] > section > [data-section-content],
-  [data-section='auto'] > section > .content,
-  [data-section='auto'] > .section > [data-section-content],
-  [data-section='auto'] > .section > .content,
-  [data-section='auto'] > [data-section-region] > [data-section-content],
-  [data-section='auto'] > [data-section-region] > .content,
+  [data-section=""] > section > [data-section-content],
+  [data-section=""] > section > .content,
+  [data-section=""] > .section > [data-section-content],
+  [data-section=""] > .section > .content,
+  [data-section=""] > [data-section-region] > [data-section-content],
+  [data-section=""] > [data-section-region] > .content,
+  [data-section="auto"] > section > [data-section-content],
+  [data-section="auto"] > section > .content,
+  [data-section="auto"] > .section > [data-section-content],
+  [data-section="auto"] > .section > .content,
+  [data-section="auto"] > [data-section-region] > [data-section-content],
+  [data-section="auto"] > [data-section-region] > .content,
   .section-container.auto > section > [data-section-content],
   .section-container.auto > section > .content,
   .section-container.auto > .section > [data-section-content],
@@ -3609,18 +3611,18 @@ label.error {
   .section-container.auto > [data-section-region] > .content {
     display: none;
   }
-  [data-section=''] > section.active > [data-section-content],
-  [data-section=''] > section.active > .content,
-  [data-section=''] > .section.active > [data-section-content],
-  [data-section=''] > .section.active > .content,
-  [data-section=''] > [data-section-region].active > [data-section-content],
-  [data-section=''] > [data-section-region].active > .content,
-  [data-section='auto'] > section.active > [data-section-content],
-  [data-section='auto'] > section.active > .content,
-  [data-section='auto'] > .section.active > [data-section-content],
-  [data-section='auto'] > .section.active > .content,
-  [data-section='auto'] > [data-section-region].active > [data-section-content],
-  [data-section='auto'] > [data-section-region].active > .content,
+  [data-section=""] > section.active > [data-section-content],
+  [data-section=""] > section.active > .content,
+  [data-section=""] > .section.active > [data-section-content],
+  [data-section=""] > .section.active > .content,
+  [data-section=""] > [data-section-region].active > [data-section-content],
+  [data-section=""] > [data-section-region].active > .content,
+  [data-section="auto"] > section.active > [data-section-content],
+  [data-section="auto"] > section.active > .content,
+  [data-section="auto"] > .section.active > [data-section-content],
+  [data-section="auto"] > .section.active > .content,
+  [data-section="auto"] > [data-section-region].active > [data-section-content],
+  [data-section="auto"] > [data-section-region].active > .content,
   .section-container.auto > section.active > [data-section-content],
   .section-container.auto > section.active > .content,
   .section-container.auto > .section.active > [data-section-content],
@@ -3631,29 +3633,29 @@ label.error {
   .section-container.auto > [data-section-region].active > .content {
     display: block;
   }
-  [data-section=''] > section:not(.active),
-  [data-section=''] > .section:not(.active),
-  [data-section=''] > [data-section-region]:not(.active),
-  [data-section='auto'] > section:not(.active),
-  [data-section='auto'] > .section:not(.active),
-  [data-section='auto'] > [data-section-region]:not(.active),
+  [data-section=""] > section:not(.active),
+  [data-section=""] > .section:not(.active),
+  [data-section=""] > [data-section-region]:not(.active),
+  [data-section="auto"] > section:not(.active),
+  [data-section="auto"] > .section:not(.active),
+  [data-section="auto"] > [data-section-region]:not(.active),
   .section-container.auto > section:not(.active),
   .section-container.auto > .section:not(.active),
   .section-container.auto > [data-section-region]:not(.active) {
     padding: 0 !important;
   }
-  [data-section=''] > section > [data-section-title],
-  [data-section=''] > section > .title,
-  [data-section=''] > .section > [data-section-title],
-  [data-section=''] > .section > .title,
-  [data-section=''] > [data-section-region] > [data-section-title],
-  [data-section=''] > [data-section-region] > .title,
-  [data-section='auto'] > section > [data-section-title],
-  [data-section='auto'] > section > .title,
-  [data-section='auto'] > .section > [data-section-title],
-  [data-section='auto'] > .section > .title,
-  [data-section='auto'] > [data-section-region] > [data-section-title],
-  [data-section='auto'] > [data-section-region] > .title,
+  [data-section=""] > section > [data-section-title],
+  [data-section=""] > section > .title,
+  [data-section=""] > .section > [data-section-title],
+  [data-section=""] > .section > .title,
+  [data-section=""] > [data-section-region] > [data-section-title],
+  [data-section=""] > [data-section-region] > .title,
+  [data-section="auto"] > section > [data-section-title],
+  [data-section="auto"] > section > .title,
+  [data-section="auto"] > .section > [data-section-title],
+  [data-section="auto"] > .section > .title,
+  [data-section="auto"] > [data-section-region] > [data-section-title],
+  [data-section="auto"] > [data-section-region] > .title,
   .section-container.auto > section > [data-section-title],
   .section-container.auto > section > .title,
   .section-container.auto > .section > [data-section-title],
@@ -3722,25 +3724,25 @@ label.error {
   .section-container.auto > .section.active > .title {
     border-bottom: 0;
   }
-  [data-section='vertical-tabs'],
+  [data-section="vertical-tabs"],
   .section-container.vertical-tabs {
     width: 100%;
     position: relative;
     display: block;
     margin-bottom: 1.25em;
   }
-  [data-section='vertical-tabs']:not([data-section-resized]):not([data-section-small-style]),
+  [data-section="vertical-tabs"]:not([data-section-resized]):not([data-section-small-style]),
   .section-container.vertical-tabs:not([data-section-resized]):not([data-section-small-style]) {
     visibility: hidden;
   }
-  [data-section='vertical-tabs'][data-section-small-style],
+  [data-section="vertical-tabs"][data-section-small-style],
   .section-container.vertical-tabs[data-section-small-style] {
     width: 100% !important;
   }
-  [data-section='vertical-tabs'][data-section-small-style]
+  [data-section="vertical-tabs"][data-section-small-style]
     > [data-section-region],
-  [data-section='vertical-tabs'][data-section-small-style] > section,
-  [data-section='vertical-tabs'][data-section-small-style] > .section,
+  [data-section="vertical-tabs"][data-section-small-style] > section,
+  [data-section="vertical-tabs"][data-section-small-style] > .section,
   .section-container.vertical-tabs[data-section-small-style]
     > [data-section-region],
   .section-container.vertical-tabs[data-section-small-style] > section,
@@ -3748,20 +3750,20 @@ label.error {
     padding: 0 !important;
     margin: 0 !important;
   }
-  [data-section='vertical-tabs'][data-section-small-style]
+  [data-section="vertical-tabs"][data-section-small-style]
     > [data-section-region]
     > [data-section-title],
-  [data-section='vertical-tabs'][data-section-small-style]
+  [data-section="vertical-tabs"][data-section-small-style]
     > [data-section-region]
     > .title,
-  [data-section='vertical-tabs'][data-section-small-style]
+  [data-section="vertical-tabs"][data-section-small-style]
     > section
     > [data-section-title],
-  [data-section='vertical-tabs'][data-section-small-style] > section > .title,
-  [data-section='vertical-tabs'][data-section-small-style]
+  [data-section="vertical-tabs"][data-section-small-style] > section > .title,
+  [data-section="vertical-tabs"][data-section-small-style]
     > .section
     > [data-section-title],
-  [data-section='vertical-tabs'][data-section-small-style] > .section > .title,
+  [data-section="vertical-tabs"][data-section-small-style] > .section > .title,
   .section-container.vertical-tabs[data-section-small-style]
     > [data-section-region]
     > [data-section-title],
@@ -3780,12 +3782,12 @@ label.error {
     > .title {
     width: 100% !important;
   }
-  [data-section='vertical-tabs'] > section > [data-section-title],
-  [data-section='vertical-tabs'] > section > .title,
-  [data-section='vertical-tabs'] > .section > [data-section-title],
-  [data-section='vertical-tabs'] > .section > .title,
-  [data-section='vertical-tabs'] > [data-section-region] > [data-section-title],
-  [data-section='vertical-tabs'] > [data-section-region] > .title,
+  [data-section="vertical-tabs"] > section > [data-section-title],
+  [data-section="vertical-tabs"] > section > .title,
+  [data-section="vertical-tabs"] > .section > [data-section-title],
+  [data-section="vertical-tabs"] > .section > .title,
+  [data-section="vertical-tabs"] > [data-section-region] > [data-section-title],
+  [data-section="vertical-tabs"] > [data-section-region] > .title,
   .section-container.vertical-tabs > section > [data-section-title],
   .section-container.vertical-tabs > section > .title,
   .section-container.vertical-tabs > .section > [data-section-title],
@@ -3796,15 +3798,15 @@ label.error {
   .section-container.vertical-tabs > [data-section-region] > .title {
     margin-bottom: 0;
   }
-  [data-section='vertical-tabs'] > section > [data-section-title] a,
-  [data-section='vertical-tabs'] > section > .title a,
-  [data-section='vertical-tabs'] > .section > [data-section-title] a,
-  [data-section='vertical-tabs'] > .section > .title a,
-  [data-section='vertical-tabs']
+  [data-section="vertical-tabs"] > section > [data-section-title] a,
+  [data-section="vertical-tabs"] > section > .title a,
+  [data-section="vertical-tabs"] > .section > [data-section-title] a,
+  [data-section="vertical-tabs"] > .section > .title a,
+  [data-section="vertical-tabs"]
     > [data-section-region]
     > [data-section-title]
     a,
-  [data-section='vertical-tabs'] > [data-section-region] > .title a,
+  [data-section="vertical-tabs"] > [data-section-region] > .title a,
   .section-container.vertical-tabs > section > [data-section-title] a,
   .section-container.vertical-tabs > section > .title a,
   .section-container.vertical-tabs > .section > [data-section-title] a,
@@ -3818,14 +3820,14 @@ label.error {
     display: inline-block;
     white-space: nowrap;
   }
-  [data-section='vertical-tabs'] > section > [data-section-content],
-  [data-section='vertical-tabs'] > section > .content,
-  [data-section='vertical-tabs'] > .section > [data-section-content],
-  [data-section='vertical-tabs'] > .section > .content,
-  [data-section='vertical-tabs']
+  [data-section="vertical-tabs"] > section > [data-section-content],
+  [data-section="vertical-tabs"] > section > .content,
+  [data-section="vertical-tabs"] > .section > [data-section-content],
+  [data-section="vertical-tabs"] > .section > .content,
+  [data-section="vertical-tabs"]
     > [data-section-region]
     > [data-section-content],
-  [data-section='vertical-tabs'] > [data-section-region] > .content,
+  [data-section="vertical-tabs"] > [data-section-region] > .content,
   .section-container.vertical-tabs > section > [data-section-content],
   .section-container.vertical-tabs > section > .content,
   .section-container.vertical-tabs > .section > [data-section-content],
@@ -3836,14 +3838,14 @@ label.error {
   .section-container.vertical-tabs > [data-section-region] > .content {
     display: none;
   }
-  [data-section='vertical-tabs'] > section.active > [data-section-content],
-  [data-section='vertical-tabs'] > section.active > .content,
-  [data-section='vertical-tabs'] > .section.active > [data-section-content],
-  [data-section='vertical-tabs'] > .section.active > .content,
-  [data-section='vertical-tabs']
+  [data-section="vertical-tabs"] > section.active > [data-section-content],
+  [data-section="vertical-tabs"] > section.active > .content,
+  [data-section="vertical-tabs"] > .section.active > [data-section-content],
+  [data-section="vertical-tabs"] > .section.active > .content,
+  [data-section="vertical-tabs"]
     > [data-section-region].active
     > [data-section-content],
-  [data-section='vertical-tabs'] > [data-section-region].active > .content,
+  [data-section="vertical-tabs"] > [data-section-region].active > .content,
   .section-container.vertical-tabs > section.active > [data-section-content],
   .section-container.vertical-tabs > section.active > .content,
   .section-container.vertical-tabs > .section.active > [data-section-content],
@@ -3854,20 +3856,20 @@ label.error {
   .section-container.vertical-tabs > [data-section-region].active > .content {
     display: block;
   }
-  [data-section='vertical-tabs'] > section:not(.active),
-  [data-section='vertical-tabs'] > .section:not(.active),
-  [data-section='vertical-tabs'] > [data-section-region]:not(.active),
+  [data-section="vertical-tabs"] > section:not(.active),
+  [data-section="vertical-tabs"] > .section:not(.active),
+  [data-section="vertical-tabs"] > [data-section-region]:not(.active),
   .section-container.vertical-tabs > section:not(.active),
   .section-container.vertical-tabs > .section:not(.active),
   .section-container.vertical-tabs > [data-section-region]:not(.active) {
     padding: 0 !important;
   }
-  [data-section='vertical-tabs'] > section > [data-section-title],
-  [data-section='vertical-tabs'] > section > .title,
-  [data-section='vertical-tabs'] > .section > [data-section-title],
-  [data-section='vertical-tabs'] > .section > .title,
-  [data-section='vertical-tabs'] > [data-section-region] > [data-section-title],
-  [data-section='vertical-tabs'] > [data-section-region] > .title,
+  [data-section="vertical-tabs"] > section > [data-section-title],
+  [data-section="vertical-tabs"] > section > .title,
+  [data-section="vertical-tabs"] > .section > [data-section-title],
+  [data-section="vertical-tabs"] > .section > .title,
+  [data-section="vertical-tabs"] > [data-section-region] > [data-section-title],
+  [data-section="vertical-tabs"] > [data-section-region] > .title,
   .section-container.vertical-tabs > section > [data-section-title],
   .section-container.vertical-tabs > section > .title,
   .section-container.vertical-tabs > .section > [data-section-title],
@@ -3881,22 +3883,22 @@ label.error {
     left: 0;
     width: 12.5em;
   }
-  [data-section='vertical-tabs'] > section.active,
-  [data-section='vertical-tabs'] > .section.active,
-  [data-section='vertical-tabs'] > [data-section-region].active,
+  [data-section="vertical-tabs"] > section.active,
+  [data-section="vertical-tabs"] > .section.active,
+  [data-section="vertical-tabs"] > [data-section-region].active,
   .section-container.vertical-tabs > section.active,
   .section-container.vertical-tabs > .section.active,
   .section-container.vertical-tabs > [data-section-region].active {
     padding-left: 12.5em;
   }
-  [data-section='vertical-tabs'] > section.active > [data-section-title],
-  [data-section='vertical-tabs'] > section.active > .title,
-  [data-section='vertical-tabs'] > .section.active > [data-section-title],
-  [data-section='vertical-tabs'] > .section.active > .title,
-  [data-section='vertical-tabs']
+  [data-section="vertical-tabs"] > section.active > [data-section-title],
+  [data-section="vertical-tabs"] > section.active > .title,
+  [data-section="vertical-tabs"] > .section.active > [data-section-title],
+  [data-section="vertical-tabs"] > .section.active > .title,
+  [data-section="vertical-tabs"]
     > [data-section-region].active
     > [data-section-title],
-  [data-section='vertical-tabs'] > [data-section-region].active > .title,
+  [data-section="vertical-tabs"] > [data-section-region].active > .title,
   .section-container.vertical-tabs > section.active > [data-section-title],
   .section-container.vertical-tabs > section.active > .title,
   .section-container.vertical-tabs > .section.active > [data-section-title],
@@ -3971,25 +3973,25 @@ label.error {
   .section-container.vertical-tabs > .section.active > .title {
     background-color: #d5d5d5;
   }
-  [data-section='vertical-nav'],
+  [data-section="vertical-nav"],
   .section-container.vertical-nav {
     width: 100%;
     position: relative;
     display: block;
     margin-bottom: 1.25em;
   }
-  [data-section='vertical-nav']:not([data-section-resized]):not([data-section-small-style]),
+  [data-section="vertical-nav"]:not([data-section-resized]):not([data-section-small-style]),
   .section-container.vertical-nav:not([data-section-resized]):not([data-section-small-style]) {
     visibility: hidden;
   }
-  [data-section='vertical-nav'][data-section-small-style],
+  [data-section="vertical-nav"][data-section-small-style],
   .section-container.vertical-nav[data-section-small-style] {
     width: 100% !important;
   }
-  [data-section='vertical-nav'][data-section-small-style]
+  [data-section="vertical-nav"][data-section-small-style]
     > [data-section-region],
-  [data-section='vertical-nav'][data-section-small-style] > section,
-  [data-section='vertical-nav'][data-section-small-style] > .section,
+  [data-section="vertical-nav"][data-section-small-style] > section,
+  [data-section="vertical-nav"][data-section-small-style] > .section,
   .section-container.vertical-nav[data-section-small-style]
     > [data-section-region],
   .section-container.vertical-nav[data-section-small-style] > section,
@@ -3997,20 +3999,20 @@ label.error {
     padding: 0 !important;
     margin: 0 !important;
   }
-  [data-section='vertical-nav'][data-section-small-style]
+  [data-section="vertical-nav"][data-section-small-style]
     > [data-section-region]
     > [data-section-title],
-  [data-section='vertical-nav'][data-section-small-style]
+  [data-section="vertical-nav"][data-section-small-style]
     > [data-section-region]
     > .title,
-  [data-section='vertical-nav'][data-section-small-style]
+  [data-section="vertical-nav"][data-section-small-style]
     > section
     > [data-section-title],
-  [data-section='vertical-nav'][data-section-small-style] > section > .title,
-  [data-section='vertical-nav'][data-section-small-style]
+  [data-section="vertical-nav"][data-section-small-style] > section > .title,
+  [data-section="vertical-nav"][data-section-small-style]
     > .section
     > [data-section-title],
-  [data-section='vertical-nav'][data-section-small-style] > .section > .title,
+  [data-section="vertical-nav"][data-section-small-style] > .section > .title,
   .section-container.vertical-nav[data-section-small-style]
     > [data-section-region]
     > [data-section-title],
@@ -4029,21 +4031,21 @@ label.error {
     > .title {
     width: 100% !important;
   }
-  [data-section='vertical-nav'] > section,
-  [data-section='vertical-nav'] > .section,
-  [data-section='vertical-nav'] > [data-section-region],
+  [data-section="vertical-nav"] > section,
+  [data-section="vertical-nav"] > .section,
+  [data-section="vertical-nav"] > [data-section-region],
   .section-container.vertical-nav > section,
   .section-container.vertical-nav > .section,
   .section-container.vertical-nav > [data-section-region] {
     position: relative;
     display: inline-block;
   }
-  [data-section='vertical-nav'] > section > [data-section-title],
-  [data-section='vertical-nav'] > section > .title,
-  [data-section='vertical-nav'] > .section > [data-section-title],
-  [data-section='vertical-nav'] > .section > .title,
-  [data-section='vertical-nav'] > [data-section-region] > [data-section-title],
-  [data-section='vertical-nav'] > [data-section-region] > .title,
+  [data-section="vertical-nav"] > section > [data-section-title],
+  [data-section="vertical-nav"] > section > .title,
+  [data-section="vertical-nav"] > .section > [data-section-title],
+  [data-section="vertical-nav"] > .section > .title,
+  [data-section="vertical-nav"] > [data-section-region] > [data-section-title],
+  [data-section="vertical-nav"] > [data-section-region] > .title,
   .section-container.vertical-nav > section > [data-section-title],
   .section-container.vertical-nav > section > .title,
   .section-container.vertical-nav > .section > [data-section-title],
@@ -4054,15 +4056,15 @@ label.error {
   .section-container.vertical-nav > [data-section-region] > .title {
     margin-bottom: 0;
   }
-  [data-section='vertical-nav'] > section > [data-section-title] a,
-  [data-section='vertical-nav'] > section > .title a,
-  [data-section='vertical-nav'] > .section > [data-section-title] a,
-  [data-section='vertical-nav'] > .section > .title a,
-  [data-section='vertical-nav']
+  [data-section="vertical-nav"] > section > [data-section-title] a,
+  [data-section="vertical-nav"] > section > .title a,
+  [data-section="vertical-nav"] > .section > [data-section-title] a,
+  [data-section="vertical-nav"] > .section > .title a,
+  [data-section="vertical-nav"]
     > [data-section-region]
     > [data-section-title]
     a,
-  [data-section='vertical-nav'] > [data-section-region] > .title a,
+  [data-section="vertical-nav"] > [data-section-region] > .title a,
   .section-container.vertical-nav > section > [data-section-title] a,
   .section-container.vertical-nav > section > .title a,
   .section-container.vertical-nav > .section > [data-section-title] a,
@@ -4076,14 +4078,14 @@ label.error {
     display: inline-block;
     white-space: nowrap;
   }
-  [data-section='vertical-nav'] > section > [data-section-content],
-  [data-section='vertical-nav'] > section > .content,
-  [data-section='vertical-nav'] > .section > [data-section-content],
-  [data-section='vertical-nav'] > .section > .content,
-  [data-section='vertical-nav']
+  [data-section="vertical-nav"] > section > [data-section-content],
+  [data-section="vertical-nav"] > section > .content,
+  [data-section="vertical-nav"] > .section > [data-section-content],
+  [data-section="vertical-nav"] > .section > .content,
+  [data-section="vertical-nav"]
     > [data-section-region]
     > [data-section-content],
-  [data-section='vertical-nav'] > [data-section-region] > .content,
+  [data-section="vertical-nav"] > [data-section-region] > .content,
   .section-container.vertical-nav > section > [data-section-content],
   .section-container.vertical-nav > section > .content,
   .section-container.vertical-nav > .section > [data-section-content],
@@ -4094,14 +4096,14 @@ label.error {
   .section-container.vertical-nav > [data-section-region] > .content {
     display: none;
   }
-  [data-section='vertical-nav'] > section.active > [data-section-content],
-  [data-section='vertical-nav'] > section.active > .content,
-  [data-section='vertical-nav'] > .section.active > [data-section-content],
-  [data-section='vertical-nav'] > .section.active > .content,
-  [data-section='vertical-nav']
+  [data-section="vertical-nav"] > section.active > [data-section-content],
+  [data-section="vertical-nav"] > section.active > .content,
+  [data-section="vertical-nav"] > .section.active > [data-section-content],
+  [data-section="vertical-nav"] > .section.active > .content,
+  [data-section="vertical-nav"]
     > [data-section-region].active
     > [data-section-content],
-  [data-section='vertical-nav'] > [data-section-region].active > .content,
+  [data-section="vertical-nav"] > [data-section-region].active > .content,
   .section-container.vertical-nav > section.active > [data-section-content],
   .section-container.vertical-nav > section.active > .content,
   .section-container.vertical-nav > .section.active > [data-section-content],
@@ -4112,20 +4114,20 @@ label.error {
   .section-container.vertical-nav > [data-section-region].active > .content {
     display: block;
   }
-  [data-section='vertical-nav'] > section:not(.active),
-  [data-section='vertical-nav'] > .section:not(.active),
-  [data-section='vertical-nav'] > [data-section-region]:not(.active),
+  [data-section="vertical-nav"] > section:not(.active),
+  [data-section="vertical-nav"] > .section:not(.active),
+  [data-section="vertical-nav"] > [data-section-region]:not(.active),
   .section-container.vertical-nav > section:not(.active),
   .section-container.vertical-nav > .section:not(.active),
   .section-container.vertical-nav > [data-section-region]:not(.active) {
     padding: 0 !important;
   }
-  [data-section='vertical-nav'] > section > [data-section-title],
-  [data-section='vertical-nav'] > section > .title,
-  [data-section='vertical-nav'] > .section > [data-section-title],
-  [data-section='vertical-nav'] > .section > .title,
-  [data-section='vertical-nav'] > [data-section-region] > [data-section-title],
-  [data-section='vertical-nav'] > [data-section-region] > .title,
+  [data-section="vertical-nav"] > section > [data-section-title],
+  [data-section="vertical-nav"] > section > .title,
+  [data-section="vertical-nav"] > .section > [data-section-title],
+  [data-section="vertical-nav"] > .section > .title,
+  [data-section="vertical-nav"] > [data-section-region] > [data-section-title],
+  [data-section="vertical-nav"] > [data-section-region] > .title,
   .section-container.vertical-nav > section > [data-section-title],
   .section-container.vertical-nav > section > .title,
   .section-container.vertical-nav > .section > [data-section-title],
@@ -4137,15 +4139,15 @@ label.error {
     position: static;
     width: auto;
   }
-  [data-section='vertical-nav'] > section > [data-section-title] a,
-  [data-section='vertical-nav'] > section > .title a,
-  [data-section='vertical-nav'] > .section > [data-section-title] a,
-  [data-section='vertical-nav'] > .section > .title a,
-  [data-section='vertical-nav']
+  [data-section="vertical-nav"] > section > [data-section-title] a,
+  [data-section="vertical-nav"] > section > .title a,
+  [data-section="vertical-nav"] > .section > [data-section-title] a,
+  [data-section="vertical-nav"] > .section > .title a,
+  [data-section="vertical-nav"]
     > [data-section-region]
     > [data-section-title]
     a,
-  [data-section='vertical-nav'] > [data-section-region] > .title a,
+  [data-section="vertical-nav"] > [data-section-region] > .title a,
   .section-container.vertical-nav > section > [data-section-title] a,
   .section-container.vertical-nav > section > .title a,
   .section-container.vertical-nav > .section > [data-section-title] a,
@@ -4157,14 +4159,14 @@ label.error {
   .section-container.vertical-nav > [data-section-region] > .title a {
     display: block;
   }
-  [data-section='vertical-nav'] > section > [data-section-content],
-  [data-section='vertical-nav'] > section > .content,
-  [data-section='vertical-nav'] > .section > [data-section-content],
-  [data-section='vertical-nav'] > .section > .content,
-  [data-section='vertical-nav']
+  [data-section="vertical-nav"] > section > [data-section-content],
+  [data-section="vertical-nav"] > section > .content,
+  [data-section="vertical-nav"] > .section > [data-section-content],
+  [data-section="vertical-nav"] > .section > .content,
+  [data-section="vertical-nav"]
     > [data-section-region]
     > [data-section-content],
-  [data-section='vertical-nav'] > [data-section-region] > .content,
+  [data-section="vertical-nav"] > [data-section-region] > .content,
   .section-container.vertical-nav > section > [data-section-content],
   .section-container.vertical-nav > section > .content,
   .section-container.vertical-nav > .section > [data-section-content],
@@ -4235,25 +4237,25 @@ label.error {
   .section-container.vertical-nav > .section:not(.active) {
     padding: 0 !important;
   }
-  [data-section='horizontal-nav'],
+  [data-section="horizontal-nav"],
   .section-container.horizontal-nav {
     width: 100%;
     position: relative;
     display: block;
     margin-bottom: 1.25em;
   }
-  [data-section='horizontal-nav']:not([data-section-resized]):not([data-section-small-style]),
+  [data-section="horizontal-nav"]:not([data-section-resized]):not([data-section-small-style]),
   .section-container.horizontal-nav:not([data-section-resized]):not([data-section-small-style]) {
     visibility: hidden;
   }
-  [data-section='horizontal-nav'][data-section-small-style],
+  [data-section="horizontal-nav"][data-section-small-style],
   .section-container.horizontal-nav[data-section-small-style] {
     width: 100% !important;
   }
-  [data-section='horizontal-nav'][data-section-small-style]
+  [data-section="horizontal-nav"][data-section-small-style]
     > [data-section-region],
-  [data-section='horizontal-nav'][data-section-small-style] > section,
-  [data-section='horizontal-nav'][data-section-small-style] > .section,
+  [data-section="horizontal-nav"][data-section-small-style] > section,
+  [data-section="horizontal-nav"][data-section-small-style] > .section,
   .section-container.horizontal-nav[data-section-small-style]
     > [data-section-region],
   .section-container.horizontal-nav[data-section-small-style] > section,
@@ -4261,20 +4263,20 @@ label.error {
     padding: 0 !important;
     margin: 0 !important;
   }
-  [data-section='horizontal-nav'][data-section-small-style]
+  [data-section="horizontal-nav"][data-section-small-style]
     > [data-section-region]
     > [data-section-title],
-  [data-section='horizontal-nav'][data-section-small-style]
+  [data-section="horizontal-nav"][data-section-small-style]
     > [data-section-region]
     > .title,
-  [data-section='horizontal-nav'][data-section-small-style]
+  [data-section="horizontal-nav"][data-section-small-style]
     > section
     > [data-section-title],
-  [data-section='horizontal-nav'][data-section-small-style] > section > .title,
-  [data-section='horizontal-nav'][data-section-small-style]
+  [data-section="horizontal-nav"][data-section-small-style] > section > .title,
+  [data-section="horizontal-nav"][data-section-small-style]
     > .section
     > [data-section-title],
-  [data-section='horizontal-nav'][data-section-small-style] > .section > .title,
+  [data-section="horizontal-nav"][data-section-small-style] > .section > .title,
   .section-container.horizontal-nav[data-section-small-style]
     > [data-section-region]
     > [data-section-title],
@@ -4295,23 +4297,23 @@ label.error {
     > .title {
     width: 100% !important;
   }
-  [data-section='horizontal-nav'] > section,
-  [data-section='horizontal-nav'] > .section,
-  [data-section='horizontal-nav'] > [data-section-region],
+  [data-section="horizontal-nav"] > section,
+  [data-section="horizontal-nav"] > .section,
+  [data-section="horizontal-nav"] > [data-section-region],
   .section-container.horizontal-nav > section,
   .section-container.horizontal-nav > .section,
   .section-container.horizontal-nav > [data-section-region] {
     position: relative;
     float: left;
   }
-  [data-section='horizontal-nav'] > section > [data-section-title],
-  [data-section='horizontal-nav'] > section > .title,
-  [data-section='horizontal-nav'] > .section > [data-section-title],
-  [data-section='horizontal-nav'] > .section > .title,
-  [data-section='horizontal-nav']
+  [data-section="horizontal-nav"] > section > [data-section-title],
+  [data-section="horizontal-nav"] > section > .title,
+  [data-section="horizontal-nav"] > .section > [data-section-title],
+  [data-section="horizontal-nav"] > .section > .title,
+  [data-section="horizontal-nav"]
     > [data-section-region]
     > [data-section-title],
-  [data-section='horizontal-nav'] > [data-section-region] > .title,
+  [data-section="horizontal-nav"] > [data-section-region] > .title,
   .section-container.horizontal-nav > section > [data-section-title],
   .section-container.horizontal-nav > section > .title,
   .section-container.horizontal-nav > .section > [data-section-title],
@@ -4322,15 +4324,15 @@ label.error {
   .section-container.horizontal-nav > [data-section-region] > .title {
     margin-bottom: 0;
   }
-  [data-section='horizontal-nav'] > section > [data-section-title] a,
-  [data-section='horizontal-nav'] > section > .title a,
-  [data-section='horizontal-nav'] > .section > [data-section-title] a,
-  [data-section='horizontal-nav'] > .section > .title a,
-  [data-section='horizontal-nav']
+  [data-section="horizontal-nav"] > section > [data-section-title] a,
+  [data-section="horizontal-nav"] > section > .title a,
+  [data-section="horizontal-nav"] > .section > [data-section-title] a,
+  [data-section="horizontal-nav"] > .section > .title a,
+  [data-section="horizontal-nav"]
     > [data-section-region]
     > [data-section-title]
     a,
-  [data-section='horizontal-nav'] > [data-section-region] > .title a,
+  [data-section="horizontal-nav"] > [data-section-region] > .title a,
   .section-container.horizontal-nav > section > [data-section-title] a,
   .section-container.horizontal-nav > section > .title a,
   .section-container.horizontal-nav > .section > [data-section-title] a,
@@ -4344,14 +4346,14 @@ label.error {
     display: inline-block;
     white-space: nowrap;
   }
-  [data-section='horizontal-nav'] > section > [data-section-content],
-  [data-section='horizontal-nav'] > section > .content,
-  [data-section='horizontal-nav'] > .section > [data-section-content],
-  [data-section='horizontal-nav'] > .section > .content,
-  [data-section='horizontal-nav']
+  [data-section="horizontal-nav"] > section > [data-section-content],
+  [data-section="horizontal-nav"] > section > .content,
+  [data-section="horizontal-nav"] > .section > [data-section-content],
+  [data-section="horizontal-nav"] > .section > .content,
+  [data-section="horizontal-nav"]
     > [data-section-region]
     > [data-section-content],
-  [data-section='horizontal-nav'] > [data-section-region] > .content,
+  [data-section="horizontal-nav"] > [data-section-region] > .content,
   .section-container.horizontal-nav > section > [data-section-content],
   .section-container.horizontal-nav > section > .content,
   .section-container.horizontal-nav > .section > [data-section-content],
@@ -4362,14 +4364,14 @@ label.error {
   .section-container.horizontal-nav > [data-section-region] > .content {
     display: none;
   }
-  [data-section='horizontal-nav'] > section.active > [data-section-content],
-  [data-section='horizontal-nav'] > section.active > .content,
-  [data-section='horizontal-nav'] > .section.active > [data-section-content],
-  [data-section='horizontal-nav'] > .section.active > .content,
-  [data-section='horizontal-nav']
+  [data-section="horizontal-nav"] > section.active > [data-section-content],
+  [data-section="horizontal-nav"] > section.active > .content,
+  [data-section="horizontal-nav"] > .section.active > [data-section-content],
+  [data-section="horizontal-nav"] > .section.active > .content,
+  [data-section="horizontal-nav"]
     > [data-section-region].active
     > [data-section-content],
-  [data-section='horizontal-nav'] > [data-section-region].active > .content,
+  [data-section="horizontal-nav"] > [data-section-region].active > .content,
   .section-container.horizontal-nav > section.active > [data-section-content],
   .section-container.horizontal-nav > section.active > .content,
   .section-container.horizontal-nav > .section.active > [data-section-content],
@@ -4380,22 +4382,22 @@ label.error {
   .section-container.horizontal-nav > [data-section-region].active > .content {
     display: block;
   }
-  [data-section='horizontal-nav'] > section:not(.active),
-  [data-section='horizontal-nav'] > .section:not(.active),
-  [data-section='horizontal-nav'] > [data-section-region]:not(.active),
+  [data-section="horizontal-nav"] > section:not(.active),
+  [data-section="horizontal-nav"] > .section:not(.active),
+  [data-section="horizontal-nav"] > [data-section-region]:not(.active),
   .section-container.horizontal-nav > section:not(.active),
   .section-container.horizontal-nav > .section:not(.active),
   .section-container.horizontal-nav > [data-section-region]:not(.active) {
     padding: 0 !important;
   }
-  [data-section='horizontal-nav'] > section > [data-section-title],
-  [data-section='horizontal-nav'] > section > .title,
-  [data-section='horizontal-nav'] > .section > [data-section-title],
-  [data-section='horizontal-nav'] > .section > .title,
-  [data-section='horizontal-nav']
+  [data-section="horizontal-nav"] > section > [data-section-title],
+  [data-section="horizontal-nav"] > section > .title,
+  [data-section="horizontal-nav"] > .section > [data-section-title],
+  [data-section="horizontal-nav"] > .section > .title,
+  [data-section="horizontal-nav"]
     > [data-section-region]
     > [data-section-title],
-  [data-section='horizontal-nav'] > [data-section-region] > .title,
+  [data-section="horizontal-nav"] > [data-section-region] > .title,
   .section-container.horizontal-nav > section > [data-section-title],
   .section-container.horizontal-nav > section > .title,
   .section-container.horizontal-nav > .section > [data-section-title],
@@ -4407,15 +4409,15 @@ label.error {
     position: static;
     width: auto;
   }
-  [data-section='horizontal-nav'] > section > [data-section-title] a,
-  [data-section='horizontal-nav'] > section > .title a,
-  [data-section='horizontal-nav'] > .section > [data-section-title] a,
-  [data-section='horizontal-nav'] > .section > .title a,
-  [data-section='horizontal-nav']
+  [data-section="horizontal-nav"] > section > [data-section-title] a,
+  [data-section="horizontal-nav"] > section > .title a,
+  [data-section="horizontal-nav"] > .section > [data-section-title] a,
+  [data-section="horizontal-nav"] > .section > .title a,
+  [data-section="horizontal-nav"]
     > [data-section-region]
     > [data-section-title]
     a,
-  [data-section='horizontal-nav'] > [data-section-region] > .title a,
+  [data-section="horizontal-nav"] > [data-section-region] > .title a,
   .section-container.horizontal-nav > section > [data-section-title] a,
   .section-container.horizontal-nav > section > .title a,
   .section-container.horizontal-nav > .section > [data-section-title] a,
@@ -4427,14 +4429,14 @@ label.error {
   .section-container.horizontal-nav > [data-section-region] > .title a {
     display: block;
   }
-  [data-section='horizontal-nav'] > section > [data-section-content],
-  [data-section='horizontal-nav'] > section > .content,
-  [data-section='horizontal-nav'] > .section > [data-section-content],
-  [data-section='horizontal-nav'] > .section > .content,
-  [data-section='horizontal-nav']
+  [data-section="horizontal-nav"] > section > [data-section-content],
+  [data-section="horizontal-nav"] > section > .content,
+  [data-section="horizontal-nav"] > .section > [data-section-content],
+  [data-section="horizontal-nav"] > .section > .content,
+  [data-section="horizontal-nav"]
     > [data-section-region]
     > [data-section-content],
-  [data-section='horizontal-nav'] > [data-section-region] > .content,
+  [data-section="horizontal-nav"] > [data-section-region] > .content,
   .section-container.horizontal-nav > section > [data-section-content],
   .section-container.horizontal-nav > section > .content,
   .section-container.horizontal-nav > .section > [data-section-content],
@@ -4862,7 +4864,7 @@ label.error {
   margin: 0;
 }
 .top-bar-section .divider,
-.top-bar-section [role='separator'] {
+.top-bar-section [role="separator"] {
   border-bottom: solid 1px #2b2b2b;
   border-top: solid 1px #000;
   clear: both;
@@ -4921,7 +4923,7 @@ label.error {
   position: relative;
 }
 .top-bar-section .has-dropdown > a:after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -4989,7 +4991,7 @@ label.error {
   }
   .top-bar:before,
   .top-bar:after {
-    content: ' ';
+    content: " ";
     display: table;
   }
   .top-bar:after {
@@ -5054,7 +5056,7 @@ label.error {
     padding-right: 35px !important;
   }
   .top-bar-section .has-dropdown > a:after {
-    content: '';
+    content: "";
     display: block;
     width: 0;
     height: 0;
@@ -5076,7 +5078,7 @@ label.error {
   }
   .top-bar-section .has-dropdown .dropdown li.has-dropdown > a:after {
     border: none;
-    content: '\00bb';
+    content: "\00bb";
     top: 1em;
     margin-top: -7px;
     right: 5px;
@@ -5103,7 +5105,7 @@ label.error {
     top: 0;
   }
   .top-bar-section > ul > .divider,
-  .top-bar-section > ul > [role='separator'] {
+  .top-bar-section > ul > [role="separator"] {
     border-bottom: none;
     border-top: none;
     border-right: solid 1px #2b2b2b;
@@ -5657,7 +5659,7 @@ label.error {
 }
 [data-clearing]:before,
 [data-clearing]:after {
-  content: ' ';
+  content: " ";
   display: table;
 }
 [data-clearing]:after {
@@ -5935,14 +5937,14 @@ label.error {
   cursor: default;
 }
 .breadcrumbs > *:before {
-  content: '/';
+  content: "/";
   color: #aaa;
   margin: 0 0.75em;
   position: relative;
   top: 1px;
 }
 .breadcrumbs > *:first-child:before {
-  content: ' ';
+  content: " ";
   margin: 0;
 }
 form.custom .hidden-field {
@@ -5971,13 +5973,13 @@ form.custom .custom.radio {
   padding: 3px;
 }
 form.custom .custom.checkbox:before {
-  content: '';
+  content: "";
   display: block;
   font-size: 16px;
   color: #fff;
 }
 form.custom .custom.radio.checked:before {
-  content: '';
+  content: "";
   display: block;
   width: 8px;
   height: 8px;
@@ -5987,7 +5989,7 @@ form.custom .custom.radio.checked:before {
   position: relative;
 }
 form.custom .custom.checkbox.checked:before {
-  content: '\00d7';
+  content: "\00d7";
   color: #222;
   position: absolute;
   top: -50%;
@@ -6038,9 +6040,9 @@ form.custom .custom.dropdown .selector {
   top: 0;
 }
 form.custom .custom.dropdown .selector:after {
-  content: '';
+  content: "";
   display: block;
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -6054,7 +6056,7 @@ form.custom .custom.dropdown .selector:after {
 }
 form.custom .custom.dropdown:hover a.selector:after,
 form.custom .custom.dropdown.open a.selector:after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -6179,7 +6181,7 @@ kbd {
   border-style: solid;
   border-width: 1px;
   margin: 0;
-  font-family: 'Consolas', 'Menlo', 'Courier', monospace;
+  font-family: "Consolas", "Menlo", "Courier", monospace;
   font-size: 0.875em;
   padding: 0.125em 0.25em 0;
   -webkit-border-radius: 3px;
@@ -6918,7 +6920,7 @@ a.th {
   margin-bottom: 0;
 }
 .f-dropdown:before {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -6931,7 +6933,7 @@ a.th {
   z-index: 99;
 }
 .f-dropdown:after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
