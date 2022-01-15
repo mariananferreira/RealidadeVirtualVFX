@@ -33,6 +33,12 @@
 @import "reset.css";
 
 /*--------------------- Menu --------------------*/
+
+* {
+  font-family: raleway-regular, Arial, Helvetica, Sans-Serif, Arial, Helvetica,
+    sans-serif;
+}
+
 .hide {
   display: none !important;
 }
@@ -1465,12 +1471,13 @@ header p {
     border: 1.5px solid white;
     border-radius: 8px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #ffffff;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
     display: inline-block;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: raleway-regular, Arial, Helvetica, Sans-Serif, Arial, Helvetica,
+      sans-serif;
     font-size: 14px;
     font-weight: 500;
     height: 40px;
@@ -1488,14 +1495,14 @@ header p {
     -webkit-user-select: none;
     touch-action: manipulation;
   }
-  
+
   .button-1:hover,
-  .button-1:focus,.selected {
+  .button-1:focus,
+  .selected {
     background-color: #567798b3;
   }
 
-
-  .centerButton{
+  .centerButton {
     margin: auto;
     width: fit-content;
     padding: 30px;

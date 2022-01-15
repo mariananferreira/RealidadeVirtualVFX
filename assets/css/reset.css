@@ -1,51 +1,58 @@
-
 ::-webkit-scrollbar {
   width: 9px;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: rgba(0,0,0,0.2); 
+  background: rgba(0, 0, 0, 0.2);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(0,0,0,0.4); 
+  background: rgba(0, 0, 0, 0.4);
 }
 
 html {
-    -webkit-transition: background-color 1s;
-    transition: background-color 1s;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
 }
-html, body {
-    min-height: 100%;
+html,
+body {
+  min-height: 100%;
 }
 html.loading {
-    background: #333 url('../images/loading.gif') no-repeat 50% 50%;
-    -webkit-transition: background-color 0;
-    transition: background-color 0;
+  background: #333 url("../images/loading.gif") no-repeat 50% 50%;
+  -webkit-transition: background-color 0;
+  transition: background-color 0;
 }
 body {
-    -webkit-transition: opacity 1s ease-in;
-    transition: opacity 1s ease-in;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
 }
 html.loading body {
-    /* Make the contents of the body opaque during loading */
-    opacity: 0;
+  /* Make the contents of the body opaque during loading */
+  opacity: 0;
 
-    /* Ensures that the transition only runs in one direction */
-    -webkit-transition: opacity 0;
-    transition: opacity 0;
+  /* Ensures that the transition only runs in one direction */
+  -webkit-transition: opacity 0;
+  transition: opacity 0;
 }
-html, body { 
-  height: 100%; 
-  font-family: "Open Sans","Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
+html,
+body {
+  height: 100%;
+  font-family: raleway-regular, Arial, Helvetica, Sans-Serif, Arial, Helvetica,
+    sans-serif;
   font-size: 14px;
   color: #666;
   line-height: 1.5em;
 }
-h1, h2, h3, h4, h5 {
-  font-family: "Open Sans","Helvetica Neue","Helvetica",Arial,Verdana,sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: raleway-regular, Arial, Helvetica, Sans-Serif, Arial, Helvetica,
+    sans-serif;
   font-weight: 300;
   color: inherit;
 }
@@ -53,12 +60,12 @@ a {
   color: #555;
 }
 blockquote {
-  border-left: 1px solid rgba(255,255,255,.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
   margin: 0 0 1.25em 1.2em;
-  font-family: 'Droid Serif', Georgia, 'Times New Roman', Times, serif;
+  font-family: "Droid Serif", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
 }
-blockquote, 
+blockquote,
 blockquote p {
   color: #555;
   font-size: 14px;
@@ -73,19 +80,19 @@ figure {
   margin: 0;
   position: relative;
 }
-input[type="text"], 
-input[type="password"], 
-input[type="date"], 
-input[type="datetime"], 
-input[type="datetime-local"], 
-input[type="month"], 
-input[type="week"], 
-input[type="email"], 
-input[type="number"], 
-input[type="search"], 
-input[type="tel"], 
-input[type="time"], 
-input[type="url"], 
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
 textarea {
   padding: 5px 10px;
 }
@@ -93,16 +100,20 @@ textarea {
 label {
   font-size: 1em;
 }
-button.secondary, .button.secondary {
+button.secondary,
+.button.secondary {
   background-color: #888;
   background-color: rgba(0, 0, 0, 0.15);
   border: medium none;
   border-radius: 0 0;
-  color: #FFF;
+  color: #fff;
 }
-button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus {
+button.secondary:hover,
+button.secondary:focus,
+.button.secondary:hover,
+.button.secondary:focus {
   background-color: #666;
-  color: #FFF;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
 }
 .clearfix:after {
@@ -113,15 +124,15 @@ button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button
   line-height: 0;
   height: 0;
 }
- 
+
 .clearfix {
   display: inline-block;
 }
- 
+
 html[xmlns] .clearfix {
   display: block;
 }
- 
+
 * html .clearfix {
   height: 1%;
 }
@@ -129,7 +140,7 @@ html[xmlns] .clearfix {
   padding: 0 !important;
 }
 .p-t-10 {
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 .p-all-20 {
   padding: 20px !important;
@@ -159,16 +170,21 @@ html[xmlns] .clearfix {
   line-height: 2;
   color: #757575;
 }
-.fa-2{font-size:2em}
-.fa-3{font-size:4em}
-.fa-4{font-size:7em}
-.fa-5{font-size:12em}
-.fa-6{font-size:20em}
-
-
-
-
-
+.fa-2 {
+  font-size: 2em;
+}
+.fa-3 {
+  font-size: 4em;
+}
+.fa-4 {
+  font-size: 7em;
+}
+.fa-5 {
+  font-size: 12em;
+}
+.fa-6 {
+  font-size: 20em;
+}
 
 .subheader {
   line-height: 1.4;
@@ -204,9 +220,9 @@ small {
   line-height: inherit;
 }
 code {
-  color: #59160D;
+  color: #59160d;
   font-size: 0.964em;
-  font-family: Consolas,"Liberation Mono",Courier,monospace;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
   font-weight: normal;
 }
 
@@ -242,7 +258,9 @@ ul li ol {
   font-size: 1rem;
   /* Override nested font-size change */
 }
-ul.square li ul, ul.circle li ul, ul.disc li ul {
+ul.square li ul,
+ul.circle li ul,
+ul.disc li ul {
   list-style: inherit;
 }
 ul.square {
@@ -347,23 +365,20 @@ blockquote p {
 }
 /*** tables ***/
 table {
-  border: 1px solid #DDD;
+  border: 1px solid #ddd;
   border-spacing: 0;
 }
 table tr th {
-  background: none repeat scroll 0 0 #8A8A8A;
-  color: #FFFFFF;
+  background: none repeat scroll 0 0 #8a8a8a;
+  color: #ffffff;
   font-size: 0.9em;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
 }
 table tr td {
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
 }
-
-
-
 
 /* button,
 .button {
@@ -384,11 +399,6 @@ button.small:hover, button.small:focus,
   padding-left: 1.4em;
   padding-right: 1.4em;
 } */
-
-
-
-
-
 
 /* button,
 .button,
@@ -414,44 +424,40 @@ button:hover,
 }
  */
 
-
-
-
-
-
-.metro-panel .blog-box.featured  > div {
-  background: #FCA325;
-}  
+.metro-panel .blog-box.featured > div {
+  background: #fca325;
+}
 .featured.blog-box .featured-box-title {
   background: rgba(255, 154, 0, 0.9);
 }
 
-
 iframe {
-	border: 0; width:100%; border:none;
+  border: 0;
+  width: 100%;
+  border: none;
 }
 
 /*  pricing-table **/
 .pricing-table {
-	transition: all .25s ease;
-	border: none;
+  transition: all 0.25s ease;
+  border: none;
 }
 .pricing-table:hover,
 .pricing-table.featured:hover {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
 .pricing-table .title {
-	background-color: rgba(255, 255, 255, 0.15);
-    color: #fff;
-    font-size: 1.2em;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 1.2em;
 }
 .pricing-table.featured {
-	transform: scale(1.02);
+  transform: scale(1.02);
 }
 .pricing-table.featured .title {
-	background: #ee4400;
+  background: #ee4400;
 }
 .pricing-table .price {
-	background-color: rgba(255, 255, 255, 0.9);
-    font-size: 1.9em;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 1.9em;
 }

@@ -1,10 +1,10 @@
 /****************************************   Custom Style ii   **************************************/
 
 .color-1 {
-  background: #0c61aa;
+  background: #3c98c1;
 }
 .color-2 {
-  background: #2f0081;
+  background: #be1e2d;
 }
 .color-3 {
   background: #008cbf;
@@ -13,10 +13,10 @@
   background: #2a36a8;
 }
 .color-5 {
-  background: #aa181f;
+  background: #c9912b;
 }
 .color-6 {
-  background: #31a174;
+  background: #636e2f;
 }
 .color-7 {
   background: #16b9f4;
@@ -67,7 +67,7 @@
   color: #ffffff;
 }
 .page-section.home-page {
-  background-image: url('../images/bg.jpg');
+  background-image: url("../images/bg.jpg");
   color: #ffffff;
   background-size: cover;
 }
