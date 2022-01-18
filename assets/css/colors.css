@@ -48,12 +48,12 @@
 }
 .page-section-57,
 .menu-list li a .color--57 {
-  background: #3495f3;
+  background: #fff;
   color: #ffffff;
 }
 .page-section-60,
 .menu-list li a .color--60 {
-  background: #3495f3;
+  background: #fff;
   color: #ffffff;
 }
 .page-section-41,
@@ -67,12 +67,11 @@
   color: #ffffff;
 }
 .page-section.home-page {
-  background-image: url("../images/bg.jpg");
   color: #ffffff;
   background-size: cover;
 }
 #spaces-main .site-name a,
 #spaces-main .showMenu,
 #spaces-main .showMenu a {
-  color: #ffffff;
+  color: #111;
 }

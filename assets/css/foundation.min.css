@@ -1211,12 +1211,14 @@ a img {
   border: none;
 }
 p {
-  font-family: inherit;
+  font-family: raleway-regular, Arial, Helvetica, Sans-Serif, Arial, Helvetica,
+    sans-serif;
   font-weight: normal;
   font-size: 1em;
   line-height: 1.6;
   margin-bottom: 1.25em;
   text-rendering: optimizeLegibility;
+  color: #111;
 }
 p aside {
   font-size: 0.875em;
